@@ -1,0 +1,149 @@
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-radius: 3px;
+    background-color: #A9E8AF;
+    color: violet;         
+}
+
+.logo-barra{
+    display: flex;
+    align-items: center;     
+}
+
+.search-box{
+  width: 1000px;
+  height: 30px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 25px; 
+  justify-content: right;  
+}
+
+.search-box input {
+  background: #fff;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: auto;
+  font-size: 15px;
+}
+
+.row{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 800px;
+}
+
+.row button img {
+  width: 30px;
+}
+
+.row button {
+  border: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  cursor: pointer; 
+}
+
+
+.header-botoes{
+    display: flex;
+    width: 905px;
+    height: 85px;
+    filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
+    align-items: center;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 26px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 2px;
+    transition-duration: 0.8s;
+    cursor: pointer;
+  }
+  
+  .btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #B063FF;
+    width: 220px;
+    height: 37px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 3%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-family: 'Anuphan', sans-serif;
+    font-size: 16px;
+  }
+
+  .btn:hover {
+    background-color: #B063FF;
+    color: white;
+  }
+
+  .corpo {
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #4CAF50;
+    border: 5px;
+    background: #A9E8AF;
+    font-family: 'Anuphan', sans-serif;
+    font-size: 20px;
+    width: 1000px;
+    height: 1000px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    
+  }
+
+.corpo h1 {
+  color: #4CAF50;
+  padding: 100px 100px;
+}
+
+.cadastro{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 1%; 
+  padding-bottom: 1%;
+  
+}
+
+.cadastro input {
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #4CAF50;
+  
+}
+
+.cadastro select {
+  width: 500px;
+  height: 40px;
+}
+
+
+  
+
