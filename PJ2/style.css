@@ -1,3 +1,6 @@
+* {
+  font-family: 'Anuphan', sans-serif;
+}
 .header{
     display: flex;
     justify-content: center;
@@ -144,6 +147,55 @@
   height: 40px;
 }
 
+/*
+  Footer
+*/
 
+#footer {
+  display: flex;
+  position: static;
   
+  margin-top: 100px;
+  padding: 100px;
 
+  background-color: #A9E8AF;
+}
+
+#txtEmail {
+  display: flex;
+  position: static;
+  float: left;
+
+  outline: none;
+  border-radius: 3px;
+  background: #FFFEFE;
+  border: 1px solid #4F8865;
+  border-radius: 4px;
+
+  width: 290px;
+  height: 40px;
+}
+
+#elemButton {
+  float: left;
+  position: absolute;
+
+  width: 90px;
+  height: 44px;
+  margin-left: 8px;
+
+  background: #506d53;
+  border: 1px solid #506C53;
+  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+  color: white;
+
+  cursor: pointer;
+  transition-duration: 0.5s;
+  
+}
+
+#elemButton:hover {
+  background-color: #465847;
+  color: white;
+}
