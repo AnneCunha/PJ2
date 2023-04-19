@@ -40,42 +40,51 @@
         <center><h1>Cadastro</h1></center>
         
             
-            <nav class="cadastro">
-                <p>Nome</p><input type="text" id="input-box" autocomplete="off">
-                <button type="submit" class="botao img"><img src="https://www.clker.com/cliparts/Z/J/g/U/V/b/avatar-male-silhouette-md.png">Adicionar Imagem</button>
-            </nav>
+        <nav class="cadastro">
+            <p>Nome</p>
+            <input type="text" id="nome"autocomplete="off" class="cadastro-nome">
+            <button type="submit" class="botao img"><img src="https://www.clker.com/cliparts/Z/J/g/U/V/b/avatar-male-silhouette-md.png">Adicionar Imagem</button>
+        </nav>
 
-            <nav class="cadastro">
-                <p>Nome de usuário</p><input type="text" id="input-box" autocomplete="off">
-                <p>CPF</p><input type="text" id="input-box" placeholder="000.000.000-00" autocomplete="off">
-            </nav>
+        <nav class="cadastro">
+            <p>Nome de usuário</p>
+            <input type="text" id="input-box" autocomplete="off" class="cadastro-usuario">
+            <p>CPF</p>
+            <input type="text" id="input-box" placeholder="000.000.000-00" autocomplete="off" class="cadastro-cpf">
+        </nav>
 
-            <nav class="cadastro">
-                <p>Data de Nascimento</p> <input type="text" id="input-box" placeholder="dd/mm/aaaa" autocomplete="off">
-                <p>Sexo</p> <select name="genero" id="genero">
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
-                </select>
-                <p>Telefone</p> <input type="text" id="input-box" placeholder="( 00 ) 00000 - 0000" autocomplete="off">
-            </nav>
+        <nav class="cadastro">
+            <p>Data de Nascimento</p> 
+            <input type="text" id="input-box" placeholder="dd/mm/aaaa" autocomplete="off" class="cadastro-nascimento">
+            <p>Sexo</p>
+            <select name="genero" id="genero">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            </select>
+            <p>Telefone</p>
+            <input type="text" id="input-box" placeholder="( 00 ) 00000 - 0000" autocomplete="off" class="cadastro-telefone">
+        </nav>
             
-            <nav class="cadastro">
-              <p>Email</p><input type="text" id="input-box" autocomplete="off">
-              <p>Senha</p> <input type="text" id="input-box" placeholder="••••••••••••••••••" autocomplete="off">
-            </nav>
-            
-            <nav class="alinhar">
-            <h3>Deseja doar ou requisitar?</h3>
-                <div class="linha">
-                    <input type="checkbox" id="check-box"><p>Doar</p>
-                    <input type="checkbox" id="check-box"><p>Requisitar</p>
+        <nav class="cadastro">
+            <p>Email</p><input type="text" id="input-box" autocomplete="off" class="cadastro-email">
+            <p>Senha</p><input type="text" id="input-box" placeholder="••••••••••••••••••" autocomplete="off" class="cadastro-senha">
+        </nav>
+        
+            <div class="alinhar">
+                <h3>Deseja doar ou requisitar?</h3>
+                
+                <div class="coluna">
+                    <input type="checkbox" id="check-box" class="check-box"><p>Doar</p>
+                    <input type="checkbox" id="check-box" class="check-box"><p>Requisitar</p>
                 </div>
-
-                <div class="linha">
-                    <h3>Concorda com nossos termos?</h3>
-                    <input type="checkbox" id="check-box"><p>Concordo com os termos</p>
-                </div>    
-            </nav>
+                        
+                <h3>Concorda com nossos termos?</h3>
+                <div class="coluna">
+                    <input type="checkbox" id="check-box" class="check-box"><p>Concordo com os termos</p>
+                </div>
+            </div>    
+                
     </div>        
+            
 </body>
 </html>

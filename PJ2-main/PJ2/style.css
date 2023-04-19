@@ -6,12 +6,14 @@
     border-style: solid;
     border-radius: 3px;
     background-color: #A9E8AF;
-    color: violet;         
+    color: violet; 
+    margin: auto;        
 }
 
 .logo-barra{
     display: flex;
-    align-items: center;     
+    align-items: center; 
+    margin: auto;    
 }
 
 .search-box{
@@ -22,7 +24,8 @@
   align-items: center;
   border-radius: 60px;
   padding: 10px 25px; 
-  justify-content: right;  
+  justify-content: right;
+  margin: auto;  
 }
 
 .search-box input {
@@ -36,6 +39,7 @@
   width: 980px;
   font-family: 'Anuphan', sans-serif;
   color: #B063FF;
+  margin: auto;
 }
 
 .row{
@@ -104,40 +108,42 @@
   }
 
   .corpo {
+    margin-top: inherit;
     border-style: solid;
     border-radius: 15px;
     border-color: #4CAF50;
-    border: 5px;
+    
     background: #A9E8AF;
     font-family: 'Anuphan', sans-serif;
     font-size: 20px;
-    width: 1000px;
-    
+    width: 1180px;
     margin-left: auto;
-    margin-right: auto;  
-     
+    margin-right: auto;
   }
 
 .corpo h1 {
   color: #4CAF50;
-  padding: 100px 100px;
+  padding: 50px;
+  
 }
 
 .cadastro{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
   align-items: baseline;
   padding: 1%; 
   padding-bottom: 1%; 
   font-family: 'Anuphan', sans-serif;
   font-size: 20px;
-  color: #000000; 
+  color: #000000;
+  padding-inline: unset;
+  white-space: nowrap;
+   
 }
 
 .cadastro input {
-  width: 500px;
-  height: 40px;
+  
   border-radius: 10px;
   border-style: solid;
   border-color: #4CAF50;
@@ -147,7 +153,7 @@
 }
 
 .cadastro select {
-  width: 500px;
+  width: 200px;
   height: 40px;
   border-radius: 10px;
   border-style: solid;
@@ -162,22 +168,60 @@
   border-style: solid;
   border-color: #4CAF50;
   border: 5%;
-  width: 280px;
+  width: 210px;
 }
 
-.linha{
+.coluna{
+  float: left;
+  width: 50%;
+  align-items: center;
   display: flex;
-  flex-direction: row;
+      
 }
-
 .alinhar h3{
   font-size: 20px;
+  
 }
 .alinhar {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-
+  padding: 1%;
+}
+.cadastro-nome{
+  width: 600px;
+  height: 30px;
+}
+.cadastro-usuario{
+  width: 600px;
+  height: 30px;
+}
+.cadastro-cpf{
+  width: 300px;
+  height: 30px;
+}
+.cadastro-nascimento{
+  width: 300px;
+  height: 30px;
+}
+.cadastro-telefone{
+  width: 300px;
+  height: 30px;
+}
+.cadastro-email{
+  width: 600px;
+  height: 30px;
+}
+.cadastro-senha{
+  width: 400px;
+  height: 30px;
+}
+.check-box{
+  width: 30px;
+  height: 30px;
+}
+.check-box select{
+  border-radius: 20%;
+  border-style: double;
+  border-color: #B063FF;
 }
 
 
