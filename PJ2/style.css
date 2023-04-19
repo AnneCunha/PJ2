@@ -161,6 +161,10 @@
   background-color: #A9E8AF;
 }
 
+/*
+  Assinatura
+*/
+
 #txtEmail {
   display: flex;
   position: static;
@@ -198,4 +202,95 @@
 #elemButton:hover {
   background-color: #465847;
   color: white;
+}
+
+#txth3 {
+  display: flex;
+  position: static;
+  justify-content: center;
+
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  align-items: center;
+  text-align: center;
+
+  color: #273528;
+
+  margin: 0%;
+
+}
+
+#txtp {
+  display: flex;
+  position: static;
+  justify-content: center;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+
+  color: #506C53;
+
+  margin-top: 5px;
+  
+}
+
+.redesSocial img {
+  display: flex;
+  position: static;
+}
+
+#icon01 {
+  position: static;
+
+  width: 30px;
+  height: 30px;
+
+  margin-top: 10px;
+}
+
+#icon02, #icon03, #icon04, #icon05, #icon06 {
+  position: static;
+
+  width: 30px;
+  height: 30px;
+
+  margin-top: 10px;
+  margin-left: 25px;
+  
+}
+
+.redesSocial, a {
+  text-decoration: none;
+}
+
+
+/*
+  copyright
+*/
+
+#copyright {
+  display: flex;
+  position: static;
+  background-color: #506C53;
+  
+  padding: 3px;
+
+  font-style: normal;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+}
+
+#txtcoryright {
+  color: #A9E8AF;
+  text-decoration: none;
 }
