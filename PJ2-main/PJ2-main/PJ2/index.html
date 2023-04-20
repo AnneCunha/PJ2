@@ -9,13 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anuphan&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png"/>
     
     <title>Ajuda Sem Fronteiras</title>
 </head>
 <body>
         <div class="header">
             <div class="logo-barra">
-                <img src="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/63ffa8b20f930f6916fbcee3/previews/63ffa8b30f930f6916fbcf20/download/noun-help-4394358.png" height="70px" width="70px">
+                <img src="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png" height="70px" width="70px">
         
                 <div class="search-box">
                     <div class="row">
@@ -38,30 +40,51 @@
         <center><h1>Cadastro</h1></center>
         
             
-            <nav class="cadastro">
-                Nome <input type="text" id="input-box" autocomplete="off">
-                <img src="https://www.clker.com/cliparts/Z/J/g/U/V/b/avatar-male-silhouette-md.png">
-            </nav>
+        <nav class="cadastro">
+            <p>Nome</p>
+            <input type="text" id="nome"autocomplete="off" class="cadastro-nome">
+            <button type="submit" class="botao img"><img src="https://www.clker.com/cliparts/Z/J/g/U/V/b/avatar-male-silhouette-md.png">Adicionar Imagem</button>
+        </nav>
 
-            <nav class="cadastro">
-                Nome de usuário <input type="text" id="input-box" autocomplete="off">
-                CPF <input type="text" id="input-box" placeholder="000.000.000-00" autocomplete="off">
-            </nav>
+        <nav class="cadastro">
+            <p>Nome de usuário</p>
+            <input type="text" id="input-box" autocomplete="off" class="cadastro-usuario">
+            <p>CPF</p>
+            <input type="text" id="input-box" placeholder="000.000.000-00" autocomplete="off" class="cadastro-cpf">
+        </nav>
 
-            <nav class="cadastro">
-                Data Nascimento <input type="text" id="input-box" placeholder="dd/mm/aaaa" autocomplete="off">
-                Sexo <select name="genero" id="genero">
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
-                </select>
-                Telefone <input type="text" id="input-box" placeholder="( 00 ) 00000 - 0000" autocomplete="off">
-            </nav>
+        <nav class="cadastro">
+            <p>Data de Nascimento</p> 
+            <input type="text" id="input-box" placeholder="dd/mm/aaaa" autocomplete="off" class="cadastro-nascimento">
+            <p>Sexo</p>
+            <select name="genero" id="genero">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            </select>
+            <p>Telefone</p>
+            <input type="text" id="input-box" placeholder="( 00 ) 00000 - 0000" autocomplete="off" class="cadastro-telefone">
+        </nav>
             
-            <nav class="cadastro">
-                Email <input type="text" id="input-box" autocomplete="off">
-                Senha <input type="text" id="input-box" placeholder="••••••••••••••••••" autocomplete="off">
-            </nav>
-    </div>
+        <nav class="cadastro">
+            <p>Email</p><input type="text" id="input-box" autocomplete="off" class="cadastro-email">
+            <p>Senha</p><input type="text" id="input-box" placeholder="••••••••••••••••••" autocomplete="off" class="cadastro-senha">
+        </nav>
+        
+            <div class="alinhar">
+                <h3>Deseja doar ou requisitar?</h3>
+                
+                <div class="coluna">
+                    <input type="checkbox" id="check-box" class="check-box"><p>Doar</p>
+                    <input type="checkbox" id="check-box" class="check-box"><p>Requisitar</p>
+                </div>
+                        
+                <h3>Concorda com nossos termos?</h3>
+                <div class="coluna">
+                    <input type="checkbox" id="check-box" class="check-box"><p>Concordo com os termos</p>
+                </div>
+            </div>    
+        <center><button type="submit" class="btn">Validar</button></center>        
+    </div>        
     <div id="footer">
         <div class="textoAssinar">
             <h3 id="txth3">Fique conectado</h3>
@@ -98,7 +121,6 @@
     </div>
     <div id="copyright">
         <a href="#"><p id="txtcoryright">copyright © 2023<br>Todos os direitos reservados</p></a>
-    </div>
+    </div>        
 </body>
 </html>
-
