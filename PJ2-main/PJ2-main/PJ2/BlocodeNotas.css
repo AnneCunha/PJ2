@@ -1,0 +1,167 @@
+
+/*
+  Apoiadores
+*/
+
+#apoiadores {
+    display: flex;
+    position: static;
+    float: right;
+  }
+  
+  .textoApoiadores p {
+    display: flex;
+    position: static;
+  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #iconApoiadores01, #iconApoiadores02, #iconApoiadores03, #iconApoiadores04  {
+    position: static;
+  
+    text-decoration: none;
+    
+    margin-right: 40px;
+    padding: 0%;
+    width: 70px;
+    height: 30px;
+  
+  }
+  
+  #iconApoiadores05, #iconApoiadores06, #iconApoiadores07, #iconApoiadores08 {
+    position: static;
+  
+    text-decoration: none;
+  
+    margin-top: 10px;
+    margin-right: 40px;
+    padding: 0%;
+    width: 70px;
+    height: 30px;
+  }
+  
+  /*
+    Texto Titulo Footer
+  */
+  
+  .textoTituloFooter {
+    display: flex;  
+    position: static;
+  
+    flex-direction: column;
+  }
+  
+  #txth3 {
+    display: flex;
+    position: static;   
+  
+  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+  
+    color: #273528;
+  
+    margin: 0%;
+  
+  }
+  
+  #txtp {
+    display: flex;
+    position: static;
+  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  
+    color: #506C53;
+  
+    margin-top: 5px;
+    
+  }
+  
+  /*
+    Assinatura
+  */
+  
+  .emailAssinarFooter {
+    display: flex;
+    position: static;
+  }
+  
+  #txtEmail {
+    position: static;
+    float: left;
+  
+    outline: none;
+    border-radius: 3px;
+    background: #FFFEFE;
+    border: 1px solid #4F8865;
+    border-radius: 4px;
+  
+    width: 290px;
+    height: 40px;
+  }
+  
+  #elemButton {
+    float: left;
+    position: absolute;
+  
+    width: 90px;
+    height: 44px;
+    margin-left: 8px;
+  
+    background: #506d53;
+    border: 1px solid #506C53;
+    filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.25));
+    border-radius: 4px;
+    color: white;
+  
+    cursor: pointer;
+    transition-duration: 0.5s;
+    
+  }
+  
+  #elemButton:hover {
+    background-color: #465847;
+    color: white;
+  }
+  
+  /*
+    RedeSociais
+  */
+  
+  .redesSocial img {
+    position: static;
+  }
+  
+  #icon01 {
+    position: static;
+  
+    width: 30px;
+    height: 30px;
+  
+    margin-top: 10px;
+  }
+  
+  #icon02, #icon03, #icon04, #icon05, #icon06 {
+    position: static;
+  
+    width: 30px;
+    height: 30px;
+  
+    margin-top: 10px;
+    margin-left: 25px;
+    
+  }
+  
+  .redesSocial, a {
+    text-decoration: none;
+  }
+  
