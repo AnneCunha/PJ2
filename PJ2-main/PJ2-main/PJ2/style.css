@@ -233,7 +233,8 @@
 
   
   margin-top: 100px;
-  padding: 30px;
+  width: 1887px;
+  height: 203px;
 
   background-color: #A9E8AF;
 
@@ -247,6 +248,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  padding-top: 30px;
 }
 
 
