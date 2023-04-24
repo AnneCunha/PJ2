@@ -9,7 +9,12 @@
     color: violet; 
     margin: auto;        
 }
-
+body{
+  margin: 0%;
+  background: fixed;
+  font-family: 'Anuphan', sans-serif;
+  background-image: url(https://trello.com/1/cards/6446d0d3f429609ff9e3aea5/attachments/6446d1489431ff7a1efc7b47/previews/6446d14a9431ff7a1efc7b58/download/BackgroundPJ2_1.png);
+}
 .logo-barra{
     display: flex;
     align-items: center; 
@@ -116,9 +121,11 @@
     background: #A9E8AF;
     font-family: 'Anuphan', sans-serif;
     font-size: 20px;
-    width: 1180px;
+    width: 1190px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 170px;
+    margin-top: 50px  ;
   }
 
 .corpo h1 {
@@ -131,7 +138,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  align-items: baseline;
+  align-items: flex-end;
   padding: 1%; 
   padding-bottom: 1%; 
   font-family: 'Anuphan', sans-serif;
@@ -140,6 +147,14 @@
   padding-inline: unset;
   white-space: nowrap;
    
+}
+
+.txtNameCadastro, p {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0%;
+  padding: 1px;
 }
 
 .cadastro input {
@@ -187,31 +202,31 @@
   padding: 1%;
 }
 .cadastro-nome{
-  width: 600px;
-  height: 30px;
+  width: 742px;
 }
 .cadastro-usuario{
-  width: 600px;
-  height: 30px;
+  width: 742px;
 }
 .cadastro-cpf{
-  width: 300px;
-  height: 30px;
+  width: 355px;
+
 }
 .cadastro-nascimento{
-  width: 300px;
-  height: 30px;
+  width: 355px;
+
 }
 .cadastro-telefone{
-  width: 300px;
-  height: 30px;
+  width: 355px;
 }
 .cadastro-email{
   width: 600px;
+  
+}
+input[type=text] {
   height: 30px;
 }
 .cadastro-senha{
-  width: 400px;
+  width: 508px;
   height: 30px;
 }
 .check-box{
@@ -229,15 +244,19 @@
 */
 
 #footer {
-  position: static;
-
-  
   margin-top: 100px;
-  width: 1887px;
-  height: 203px;
-
   background-color: #A9E8AF;
 
+  padding: 10px;
+}
+
+/*
+  Wrapper
+*/
+
+.wrapper {
+  max-width: 1320px;
+  margin: auto;
 }
 
 /*
@@ -252,10 +271,23 @@
   padding-top: 30px;
 }
 
+.allFooter > div {
+  width: 400px;
+}
+
 
 /*
   Email / Assinar
 */
+.textoAssinar {
+  display: flex;
+  flex-direction: column;
+}
+
+#allEmailButton {
+  display: flex;
+  flex-direction: row;
+}
 
 #txth3 {
   display: flex;
@@ -271,7 +303,7 @@
 
   color: #273528;
 
-  margin: 0%;
+  margin: 0px 100px 0px 0px;
 
 }
 
@@ -288,7 +320,7 @@
 
   color: #506C53;
 
-  margin: 0px 0px 14px 0px;
+  margin: 0px 100px 14px 0px;
   
 }
 
@@ -348,7 +380,7 @@
   }
   
   #icon02, #icon03, #icon04, #icon05, #icon06 {
-    position: static;
+    position: static  ;
   
     width: 30px;
     height: 30px;
@@ -361,7 +393,6 @@
 .redesSocial, a {
   text-decoration: none;
 }
-
 
 /*
   Logo / Name
@@ -435,7 +466,6 @@
   margin: 0%;
 
 
-  font-family: 'Bhavuka';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -446,18 +476,39 @@
   color: #273528;
 }
 
-#iconApoiadores01, #iconApoiadores02, #iconApoiadores03, #iconApoiadores04, #iconApoiadores05, #iconApoiadores06, #iconApoiadores07, #iconApoiadores08 {
+.allApoiadoresTop {
+  display: flex;
+  flex-direction: row;
+
+}
+#iconApoiadores01, #iconApoiadores02, #iconApoiadores03, #iconApoiadores04 {
   position: static;
   
-    text-decoration: none;
+  text-decoration: none;
   
-    margin-top: 10px;
-    margin-right: 40px;
-    padding: 0%;
-    width: 70px;
-    height: 30px;
+  margin-top: 10px;
+  margin-right: 40px;
+  padding: 0%;
+  width: 70px;
+  height: 30px;
 }
 
+.allApoiadoresEnd {
+  display: flex;
+  flex-direction: row;
+}
+
+#iconApoiadores05, #iconApoiadores06, #iconApoiadores07, #iconApoiadores08 {
+  position: static;
+  
+  text-decoration: none;
+  
+  margin-top: 10px;
+  margin-right: 40px;
+  padding: 0%;
+  width: 70px;
+  height: 30px;
+}
 
 /*
   copyright
