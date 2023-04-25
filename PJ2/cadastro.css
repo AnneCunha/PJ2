@@ -13,7 +13,7 @@ body{
   margin: 0%;
   background: fixed;
   font-family: 'Anuphan', sans-serif;
-  background-image: url(https://trello.com/1/cards/6446d0d3f429609ff9e3aea5/attachments/6446d153f25f391c8ead5160/previews/6446d155f25f391c8ead53d9/download/BackgroundPJ2_2.png);
+  background-image: url(https://trello.com/1/cards/6446d0d3f429609ff9e3aea5/attachments/6446d1489431ff7a1efc7b47/previews/6446d14a9431ff7a1efc7b58/download/BackgroundPJ2_1.png);
 }
 .logo-barra{
     display: flex;
@@ -132,6 +132,111 @@ body{
   color: #4CAF50;
   padding: 50px;
   
+}
+
+.cadastro{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 1%; 
+  padding-bottom: 1%; 
+  font-family: 'Anuphan', sans-serif;
+  font-size: 20px;
+  color: #000000;
+  padding-inline: unset;
+  white-space: nowrap;
+   
+}
+
+.txtNameCadastro, p {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0%;
+  padding: 1px;
+}
+
+.cadastro input {
+  
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #4CAF50;
+  font-family: 'Anuphan', sans-serif;
+  font-size: 20px;
+  color: #000000;
+}
+
+.cadastro select {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #4CAF50;
+  
+}
+
+.botao img {
+  cursor: pointer;
+  display: flex;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #4CAF50;
+  border: 5%;
+  width: 210px;
+}
+
+.coluna{
+  float: left;
+  width: 50%;
+  align-items: center;
+  display: flex;
+      
+}
+.alinhar h3{
+  font-size: 20px;
+  
+}
+.alinhar {
+  display: flex;
+  padding: 1%;
+}
+.cadastro-nome{
+  width: 742px;
+}
+.cadastro-usuario{
+  width: 742px;
+}
+.cadastro-cpf{
+  width: 355px;
+
+}
+.cadastro-nascimento{
+  width: 355px;
+
+}
+.cadastro-telefone{
+  width: 355px;
+}
+.cadastro-email{
+  width: 600px;
+  
+}
+input[type=text] {
+  height: 30px;
+}
+.cadastro-senha{
+  width: 508px;
+  height: 30px;
+}
+.check-box{
+  width: 30px;
+  height: 30px;
+}
+.check-box select{
+  border-radius: 20%;
+  border-style: double;
+  border-color: #B063FF;
 }
 
 /*
@@ -429,101 +534,5 @@ body{
   text-decoration: none;
 }
 
+  
 
-/* foto do perfil do usuario */
-
-
-#foto_feedback {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px;
-}
-
-#foto_usuario {
-  /* imagem usuario 5 */
-
-  box-sizing: border-box;
-  width: 320px;
-  height: 338px;
-  background: url(image.png);
-  border: 3px solid #506C53;
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.5));
-  border-radius: 10px;
-}
-
-
-/* texto de agradecimento ao usuario  */
-
-
-#agradecimento_feedback {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#agradecimento_feedback > h3 {
-  padding-left: 50px;
-  padding-right: 50px;
-
-  color: #405642;
-
-  font-family: 'Istok Web';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 46px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-#agradecimento_feedback > h2 {
-  padding-left: 50px;
-  padding-right: 50px;
-
-  color: #405642;
-
-  font-family: 'Istok Web';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 46px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-
-/* css da caixa de estrela do feedback */
-
-
-#rattingStars_feedback {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 20px;
-}
-
-#rattingStars_feedback > h1 {
-  font-family: 'Istok Web';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 69px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #506C53;
-
-}
-
-#estrelas {
-  width: 250px;
-}

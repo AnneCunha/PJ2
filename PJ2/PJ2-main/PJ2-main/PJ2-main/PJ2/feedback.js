@@ -1,1 +1,0 @@
-/*animação do botão HOME*/
