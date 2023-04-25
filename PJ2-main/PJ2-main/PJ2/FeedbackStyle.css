@@ -522,8 +522,67 @@ body{
 
   color: #506C53;
 
+  margin-bottom: 0px;
 }
 
 #estrelas {
   width: 250px;
+}
+
+.feedback_feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#mensagem_feedback {
+  box-sizing: border-box;
+  width: 799px;
+  height: 253px;
+  background: #FFFFFF;
+  border: 5px solid #506C53;
+  border-radius: 10px;
+  resize: none;
+}
+
+#feedback_text {
+  width: 146px;
+  height: 46px;
+
+  font-family: 'Istok Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+  /* identical to box height */
+
+  color: #506C53;
+
+  padding-right: 650px;
+  padding-top: 15px;
+}
+
+#bt_envio {
+  width: 247px;
+  height: 53px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  margin-top: 40px;
+
+  border-radius: 50px;
+
+  width: 230px;
+  height: 53px;
+
+  font-family: 'Istok Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #506C53;
+
 }
