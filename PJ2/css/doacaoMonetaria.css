@@ -172,7 +172,7 @@ body{
     Categoria de Campanhas / Beneficente / Monetario
 */
 
-#inputCampanhas, #inputBeneficentes, #inputMonetario {
+.inputCampanhas, .Beneficentes, #inputMonetario {
     box-sizing: border-box;
     
     width: 474px;
@@ -185,6 +185,8 @@ body{
     margin-top: 10px;
 
     font-size: 32px;
+
+    outline: none;
 }
 
 /*

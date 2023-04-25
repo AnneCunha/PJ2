@@ -43,45 +43,47 @@
         <div class="allRegistro">
             <div class="registro">
                 <form action="CategoriaCampanhas">
-                    <input type="text" list="Campanhas" placeholder="Categoria de Campanhas" id="inputCampanhas">
-                    <datalist id="Campanhas">
-                        <option value="Saúde"></option>
-                        <option value="Funeral"></option>
-                        <option value="Emergência"></option>
-                        <option value="Organização sem fins lucrativos"></option>
-                        <option value="Emergência Financeira"></option>
-                        <option value="Animais"></option>
-                    </datalist>
+                    <!-- <input type="text" list="Campanhas" placeholder="Categoria de Campanhas" id="inputCampanhas"> -->
+                    <select class="inputCampanhas" aria-placeholder="Categoria de Campanhas">
+                        <option value=""></option>
+                        <option value="Saúde">Saúde</option>
+                        <option value="Funeral">Funeral</option>
+                        <option value="Emergência">Emergência</option>
+                        <option value="Organização sem fins lucrativos">Organização sem fins lucrativos</option>
+                        <option value="Emergência Financeira">Emergência Financeira</option>
+                        <option value="Animais">Animais</option>
+                    </select>
                 </form>
 
                 <form action="beneficente">
-                    <input type="text" list="Beneficentes" placeholder="Beneficentes" id="inputBeneficentes">
-                    <datalist id="Beneficentes">
+                    <!-- <input type="text" list="Beneficentes" placeholder="Beneficentes" id="inputBeneficentes"> -->
+                    <select class="Beneficentes" aria-placeholder="Beneficentes">
                         <option value="select"></option>
-                        <option value="select"></option>
-                    </datalist>
+                        <option value="select">exemplo</option>
+                        <option value="">exemplo</option>
+                    </select>
                 </form>
 
                 <form action="Monetario">
-                    <input type="text" placeholder="R$ 0,00" id="inputMonetario">
+                    <input type="number" placeholder="R$ 0,00" id="inputMonetario">
                 </form>
 
                 <!-- Icon de Serviço -->
         <div class="iconServico">
             <nav>
-                <a href="#">
+                <a href="#" class="linkServico">
                     <img id="iconServico01" src="img/Icon Doação Monetaria/Banco do Brasil.png" alt="Banco do Brasil">
                 </a>
-                <a href="#">
+                <a href="#" class="linkServico">
                     <img id="iconServico02" src="img/Icon Doação Monetaria/Visa.png" alt="Visa">
                 </a>
-                <a href="#">
+                <a href="#" class="linkServico">
                     <img id="iconServico03" src="img/Icon Doação Monetaria/Elo.png" alt="Elo">
                 </a>
-                <a href="#">
+                <a href="#" class="linkServico">
                     <img id="iconServico04" src="img/Icon Doação Monetaria/Maestro.png" alt="Maestro">
                 </a>
-                <a href="#">
+                <a href="#" class="linkServico">
                     <img id="iconServico05" src="img/Icon Doação Monetaria/MasterCard.png" alt="MasterCard">
                 </a>
             </nav>
@@ -95,6 +97,21 @@
         </div>
 
         
+        <!-- Cartão -->
+        <div class="imgcartao">
+            <form action="Nome do cartão">
+                <input type="text" id="txtNameCartao">
+            </form>
+
+            <form action="Número do cartão / Valido até / CVV">
+                <input type="number" id="numeroCartao">
+
+                <input type="date" name="Valido" id="dateValido">
+
+                <input type="number" id="cvv">
+            </form>
+
+        </div>
     </div>      
     
     
