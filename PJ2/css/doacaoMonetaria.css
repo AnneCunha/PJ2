@@ -208,34 +208,52 @@ body{
 }
 
 /*
-  Img Cartão / Cadastros
+  Cartão / Img Cartão / Cadastros
 */
 
-
-.imgCartao {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  background-image: url("https://trello.com/1/cards/64480e93aa8100e71d123efd/attachments/6448b569bb98df5a0e4cd7c4/previews/6448b56abb98df5a0e4cd9a9/download/Cart%C3%A3o.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: inherit;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
-/* #imgFundoCartao {
+.cartao {
   display: flex;
+  position: static;
+  justify-content: center;
 
-  padding: 0%;
+  margin-top: 16px;
+}
+
+.superiorTextoInput  {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+
+  margin-top: 223px;
+  margin-left: 270px; 
+}
+
+#txtTituloCartao {
+  position: static;
+  float: right;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: rgba(0, 0, 0, 0.700);
+
   margin: 0%;
-} */
-
+  padding: 0%;
+}
 
 #txtNameCartao {
-  position: absolute;
+  position: static;
+  float: right;
 
   width: 641px;
-  height: 64px;
-  margin-top: 100px;
+  height: 64px; 
 
   background: #F0F402;;
 
@@ -244,9 +262,62 @@ body{
   outline: none;
 
   font-size: 40px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.7);
 }
 
+.superiorNumeroValidoCvv {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+
+  margin-top: 430px;
+
+  
+}
+
+#numeroCartao {
+  width: 641px;
+  height: 64px;
+
+  background: #F0F402;
+  border: 3px solid rgba(80, 108, 83, 0.49);
+  border-radius: 19px;
+  font-size: 40px;
+  outline: none;
+  -webkit-appearance: none;
+
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#dateValido {
+  width: 124px;
+  height: 64px;
+
+  background: #F0F402;
+  border: 3px solid rgba(80, 108, 83, 0.49);
+  border-radius: 19px;
+  outline: none;
+  text-align: center;
+  
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#cvv {
+  width: 124px;
+  height: 64px;
+
+  background: #F0F402;
+  border: 3px solid rgba(80, 108, 83, 0.49);
+  border-radius: 19px;
+  font-size: 36px;
+  outline: none;
+  -moz-appearance: textfield;
+
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
 
 
 

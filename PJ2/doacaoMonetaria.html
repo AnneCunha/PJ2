@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/doacaoMonetaria.css">
+    <link rel="stylesheet" href="doacaoMonetaria.js">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,21 +99,22 @@
 
         
         <!-- Cartão -->
-        <div class="imgCartao">
-            <form action="">
-                <!-- <img src="img/Fundo do Cartão/Cartão.png" alt="Fondo cartão" id="imgFundoCartao"> -->
-                <!-- <h3 class="">Nome do cartão</h3> -->
-                <input type="text" id="txtNameCartao">
+        <div class="cartao">
+            <img src="img/Fundo do Cartão/Cartão.png" alt="Fundo do Cartão">
+            <form class="superiorTextoInput">
+                <h3 id="txtTituloCartao">Nome do cartão</h3>
+                <input type="text" id="txtNameCartao" placeholder="XXXXXXXXXXXXXXXXX">
             </form>
+            <form action="Número do cartão / Valido até / CVV" class="superiorNumeroValidoCvv">
+                <input type="number" name="numeroCartao" id="numeroCartao" placeholder="XXXX XXXX XXXX XXXX" pattern="[\d]{4} [\d]{4} [\d]{4} [\d]{4}" onKeyPress="if(this.value.length==16) return false;">
 
-            <form action="Número do cartão / Valido até / CVV">
-                <input type="number" id="numeroCartao">
+                <input type="month" name="Valido" id="dateValido" value="01-2000"> 
 
-                <input type="month" name="Valido" id="dateValido">
-
-                <input type="number" id="cvv">
+                <input type="number" id="cvv" placeholder="000" onKeyPress="if(this.value.length==3) return false;">
             </form>
         </div>
+
+        <!-- Mensagem de Texto -->
     </div>      
     
     
