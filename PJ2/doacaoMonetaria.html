@@ -39,99 +39,108 @@
     
         <!-- Body -->
     <div class="corpo">
-        <h1>Dados de doação monetária</h1>
+        <div class="wrapperCorpo">
+            <!-- <h1 id="tituloCorpo">Dados de doação monetária</h1> -->
 
-        <div class="allRegistro">
-            <div class="registro">
-                <form action="CategoriaCampanhas">
-                    <!-- <input type="text" list="Campanhas" placeholder="Categoria de Campanhas" id="inputCampanhas"> -->
-                    <select class="inputCampanhas" aria-placeholder="Categoria de Campanhas">
-                        <option value=""></option>
-                        <option value="Saúde">Saúde</option>
-                        <option value="Funeral">Funeral</option>
-                        <option value="Emergência">Emergência</option>
-                        <option value="Organização sem fins lucrativos">Organização sem fins lucrativos</option>
-                        <option value="Emergência Financeira">Emergência Financeira</option>
-                        <option value="Animais">Animais</option>
-                    </select>
-                </form>
+            <div class="allRegistro">
+                <div class="registro">
+                    <form action="CategoriaCampanhas">
+                        <h1 id="tituloCorpo">Dados de doação monetária</h1>
+                        <!-- <input type="text" list="Campanhas" placeholder="Categoria de Campanhas" id="inputCampanhas"> -->
+                        <select class="campanhas">
+                            <option value="0" >Campanhas</option>
+                            <option value="1">Saúde</option>
+                            <option value="2">Funeral</option>
+                            <option value="3">Emergência</option>
+                            <option value="4">Organização sem fins lucrativos</option>
+                            <option value="5">Emergência Financeira</option>
+                            <option value="6">Animais</option>
+                        </select>
+                    </form>
 
-                <form action="beneficente">
-                    <!-- <input type="text" list="Beneficentes" placeholder="Beneficentes" id="inputBeneficentes"> -->
-                    <select class="Beneficentes" aria-placeholder="Beneficentes">
-                        <option value="select"></option>
-                        <option value="select">exemplo</option>
-                        <option value="">exemplo</option>
-                    </select>
-                </form>
+                    <form action="beneficente">
+                        <!-- <input type="text" list="Beneficentes" placeholder="Beneficentes" id="inputBeneficentes"> -->
+                        <select class="beneficentes" aria-placeholder="Beneficentes">
+                            <option value="0">Beneficentes</option>
+                            <option value="1">exemplo</option>
+                            <option value="2">exemplo</option>
+                        </select>
+                    </form>
 
-                <form action="Monetario">
-                    <input type="number" placeholder="R$ 0,00" id="inputMonetario">
-                </form>
+                    <form action="Monetario">
+                        <input type="number" placeholder="R$ 0,00" id="inputMonetario">
+                    </form>
 
-                <!-- Icon de Serviço -->
-                <div class="iconServico">
-                    <nav>
-                        <a href="#" class="linkServico">
-                            <img id="iconServico01" src="img/Icon Doação Monetaria/Banco do Brasil.png" alt="Banco do Brasil">
-                        </a>
-                        <a href="#" class="linkServico">
-                            <img id="iconServico02" src="img/Icon Doação Monetaria/Visa.png" alt="Visa">
-                        </a>
-                        <a href="#" class="linkServico">
-                            <img id="iconServico03" src="img/Icon Doação Monetaria/Elo.png" alt="Elo">
-                        </a>
-                        <a href="#" class="linkServico">
-                            <img id="iconServico04" src="img/Icon Doação Monetaria/Maestro.png" alt="Maestro">
-                        </a>
-                        <a href="#" class="linkServico">
-                            <img id="iconServico05" src="img/Icon Doação Monetaria/MasterCard.png" alt="MasterCard">
-                        </a>
-                    </nav>
+
+                    <!-- Icon de Serviço -->
+                    <div class="iconServico">
+                        <nav>
+                            <a href="#" class="linkServico">
+                                <img id="iconServico01" src="img/Icon Doação Monetaria/Banco do Brasil.png" alt="Banco do Brasil">
+                            </a>
+                            <a href="#" class="linkServico">
+                                <img id="iconServico02" src="img/Icon Doação Monetaria/Visa.png" alt="Visa">
+                            </a>
+                            <a href="#" class="linkServico">
+                                <img id="iconServico03" src="img/Icon Doação Monetaria/Elo.png" alt="Elo">
+                            </a>
+                            <a href="#" class="linkServico">
+                                <img id="iconServico04" src="img/Icon Doação Monetaria/Maestro.png" alt="Maestro">
+                            </a>
+                            <a href="#" class="linkServico">
+                                <img id="iconServico05" src="img/Icon Doação Monetaria/MasterCard.png" alt="MasterCard">
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="imgDoador">
+                    <img src="img/fotoUsuario/imagem usuario.png" alt="">
+                    <h2 id="txtH3Doador">(Name) Doador</h2>
                 </div>
             </div>
 
-            <div class="imgDoador">
-                <img src="img/fotoUsuario/imagem usuario.png" alt="">
-                <h3 id="txtJH3Doador">(Name) Doador</h3>
+            
+            <!-- Cartão -->
+            <div class="cartao">
+                <img src="img/Fundo do Cartão/Cartão.png" alt="Fundo do Cartão">
+                <form class="superiorTextoInput">
+                    <h3 id="txtTituloCartao">Nome do cartão</h3>
+                    <input type="text" id="txtNameCartao" placeholder="XXXXXXXXXXXXXXXXX">
+                </form>
+                <form action="Número do cartão / Valido até / CVV" class="superiorNumeroValidoCvv">
+                    <input type="number" name="numeroCartao" id="numeroCartao" placeholder="XXXX XXXX XXXX XXXX" pattern="[\d]{4} [\d]{4} [\d]{4} [\d]{4}" onKeyPress="if(this.value.length==16) return false;">
+
+                    <input type="month" name="Valido" id="dateValido" value="01-2000"> 
+
+                    <input type="number" id="cvv" placeholder="000" onKeyPress="if(this.value.length==3) return false;">
+                </form>
             </div>
-        </div>
 
-        
-        <!-- Cartão -->
-        <div class="cartao">
-            <img src="img/Fundo do Cartão/Cartão.png" alt="Fundo do Cartão">
-            <form class="superiorTextoInput">
-                <h3 id="txtTituloCartao">Nome do cartão</h3>
-                <input type="text" id="txtNameCartao" placeholder="XXXXXXXXXXXXXXXXX">
-            </form>
-            <form action="Número do cartão / Valido até / CVV" class="superiorNumeroValidoCvv">
-                <input type="number" name="numeroCartao" id="numeroCartao" placeholder="XXXX XXXX XXXX XXXX" pattern="[\d]{4} [\d]{4} [\d]{4} [\d]{4}" onKeyPress="if(this.value.length==16) return false;">
 
-                <input type="month" name="Valido" id="dateValido" value="01-2000"> 
+            <!-- Código Pix -->
+            <div class="descricaoPix">
+                <h2 id="txtDescricaoPix">Doe através do Pix!</h2>
+                <div class="allDescricao">
 
-                <input type="number" id="cvv" placeholder="000" onKeyPress="if(this.value.length==3) return false;">
-            </form>
-        </div>
+                    <img src="img/Pix/Img Pix 04.png" alt="Imagem Pix" id="imgPix">
 
-        <!-- Código Pix -->
-        <div class="descricaoPix">
-            <h2 id="txtDescricaoPix">Doe através do Pix!</h2>
-            <div class="allDescricao">
+                    <div class="allTextoDescricaoPix">
+                        <p>Nome: Ajuda Sem Fronteiras</p>
+                        <br>
+                        <p>Banco: 007 Inter</p>
+                        <br>
+                        <p>Chave Pix: 39.421.539/0001-50</p>
+                    </div>
 
-                <img src="img/Pix/Img Pix 04.png" alt="Imagem Pix" id="imgPix">
-
-                <div class="allTextoDescricaoPix">
-                    <p>Nome: Ajuda Sem Fronteiras</p>
-                    <br>
-                    <p>Banco: 007 Inter</p>
-                    <br>
-                    <p>Chave Pix: 39.421.539/0001-50</p>
+                    <img src="img/Pix/Rectangle cod QR 04.png" alt="Imagem QRCode" id="imgQRCode">
                 </div>
+            </div>
 
-                <img src="img/Pix/Rectangle cod QR 04.png" alt="Imagem QRCode" id="imgQRCode">
 
-                
+            <!-- Botão Doar-->
+            <div class="mainButton">
+                <button type="submit" class="btn">Home</button>
             </div>
         </div>
     </div>      
@@ -139,7 +148,7 @@
     
     <!-- Footer -->
     <footer class="footer">
-        <div class="wrapper">
+        <div class="wrapperFooter">
             <div class="allFooter">
 
                 <!-- Email / Assinar-->

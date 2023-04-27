@@ -134,16 +134,39 @@ body{
     width: 1190px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 170px;
-    margin-top: 50px  ;
+    margin-top: 50px;
+
   }
 
 .corpo h1 {
   color: #273528;
-  padding: 50px;
-  
+  padding: 0%;
+  margin: 0px 0px 32px 0px;
 }
 
+/*
+  Wearpper
+*/
+
+.wrapperCorpo {
+  max-width: 1000px;
+  padding-top: 59px;
+  margin: auto;
+}
+
+/*
+  Titulo do Corpo
+*/
+
+#tiluloCorpo {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 69px;
+
+  color: #273528;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 /*
     OutrasPessoas / Beneficente / Valor / Img Doador
 */
@@ -172,22 +195,33 @@ body{
     Categoria de Campanhas / Beneficente / Monetario
 */
 
-.inputCampanhas, .Beneficentes, #inputMonetario {
-    box-sizing: border-box;
-    
-    width: 474px;
-    height: 67px;
+.campanhas, .beneficentes, #inputMonetario {
+  box-sizing: border-box;
 
-    background: #FFFFFF;
+  width: 474px;
+  height: 67px;
 
-    border: 4px solid #506C53;
-    border-radius: 10px;
-    margin-top: 10px;
+  background: #FFFFFF;
 
-    font-size: 32px;
+  border: 4px solid #506C53;
+  border-radius: 10px;
 
-    outline: none;
+  font-size: 32px;
+
+  outline: none;
+
+  cursor: pointer;
 }
+
+.campanhas, .beneficentes, option {
+
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
 
 /*
     ImgDoador / txtDoador
@@ -203,7 +237,11 @@ body{
     Icon de Serviço
 */
 
-#iconServico01, #iconServico02, #iconServico03, #iconServico04 {
+.iconServico {
+  margin-top: 40px;
+}
+
+#iconServico01, #iconServico02, #iconServico03, #iconServico04 { 
     margin-right: 30px;
 }
 
@@ -237,7 +275,6 @@ input::-webkit-inner-spin-button {
   position: static;
   float: right;
 
-  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 35px;
@@ -323,14 +360,30 @@ input::-webkit-inner-spin-button {
   Código Pix
 */
 
+#txtDescricaoPix {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #506C53;
+}
+
 .allDescricao {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+#txtDescricaoPix {
+  padding: 0%;
+  margin: 54px 0px 0px 0px;
 }
 
 #imgPix {
-
-
   width: 150px;
   height: 150px;
 }
@@ -344,6 +397,47 @@ input::-webkit-inner-spin-button {
   margin: 0%;
   padding: 0% ;
 
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #506C53;
+}
+
+/*
+  Botão Doar
+*/
+
+.mainButton {
+  display: flex;
+  justify-content: center;
+
+  margin: 50px;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  border: 3px solid #465847;
+  
+  border-radius: 30px;
+  width: 300px;
+  height: 55px;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 32px;
+  margin: 3%; 
+  transition-duration: 0.5s;
+  cursor: pointer;
+  
+}
+
+.btn:hover {
+
+  background-color: #273528;
+  color: white;
 }
 
 
@@ -363,7 +457,7 @@ input::-webkit-inner-spin-button {
   Wrapper
 */
 
-.wrapper {
+.wrapperFooter {
   max-width: 1320px;
   margin: auto;
 }
@@ -402,8 +496,6 @@ input::-webkit-inner-spin-button {
   display: flex;
   position: static;   
 
-
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
@@ -420,7 +512,6 @@ input::-webkit-inner-spin-button {
   display: flex;
   position: static;
 
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -534,7 +625,6 @@ input::-webkit-inner-spin-button {
 #txtLogoName01 {
   margin: 15px 0px 0px 0px;
 
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
@@ -546,7 +636,6 @@ input::-webkit-inner-spin-button {
 #txtLogoName02 {
   margin: 4px 0px 10px 0px;
 
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 19px;
@@ -575,7 +664,6 @@ input::-webkit-inner-spin-button {
   margin: 0%;
 
 
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -630,7 +718,6 @@ input::-webkit-inner-spin-button {
   
   padding: 3px;
 
-  font-style: normal;
   text-align: center;
   justify-content: center;
   align-items: center;
