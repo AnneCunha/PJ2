@@ -319,13 +319,40 @@ input::-webkit-inner-spin-button {
   color: rgba(0, 0, 0, 0.7);
 }
 
+/*
+  Código Pix
+*/
+
+.allDescricao {
+  display: flex;
+  justify-content: space-around;
+}
+
+#imgPix {
+
+
+  width: 150px;
+  height: 150px;
+}
+
+
+.allTextoDescricaoPix, p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0%;
+  padding: 0% ;
+
+}
 
 
 /*
   Footer
 */
 
-#footer {
+
+.footer {
   margin-top: 100px;
   background-color: #A9E8AF;
 

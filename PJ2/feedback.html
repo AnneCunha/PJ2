@@ -16,7 +16,7 @@
     <!-- Header -->
     <div class="header">
         <div class="logo-barra">
-            <img src="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png" height="70px" width="70px">
+            <img src="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png" height="70px" width="70px" id="logo">
 
             <div class="search-box">
                 <div class="row">
@@ -32,6 +32,39 @@
             <button type="submit" class="btn">Ajuda Monetária</button>
             <button type="submit" class="btn">Login</button>
         </nav>
+
+        <div class="PopUpLogin">
+            <button class="open-button" onclick="openForm()">Fazer Login</button>
+
+        <!-- The form -->
+        <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Senha" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+        </form>
+        </div>  
+        <script>
+            function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            }
+            </script>
+                </div>
+            </div>        
+
+
+
     </div>
 
 
