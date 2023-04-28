@@ -308,8 +308,10 @@ input::-webkit-inner-spin-button {
   flex-direction: row;
 
   margin-top: 430px;
+}
 
-  
+.txtNumeroCartao {
+  position: absolute;
 }
 
 #numeroCartao {
