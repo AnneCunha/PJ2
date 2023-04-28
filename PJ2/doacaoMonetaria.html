@@ -108,15 +108,23 @@
                     <h2 id="txtTituloCartao">Nome do cartão</h2>
                     <input type="text" id="txtNameCartao" placeholder="XXXXXXXXXXXXXXXXX">
                 </form>
-                <form action="Número do cartão / Valido até / CVV" class="superiorNumeroValidoCvv">
 
+                <form action=""  id="txtTitulo">
                     <h2 id="txtNumeroCartao">Número do Cartão</h2>
-                    <input type="number" name="numeroCartao" id="numeroCartao" placeholder="XXXX XXXX XXXX XXXX" pattern="[\d]{4} [\d]{4} [\d]{4} [\d]{4}" onKeyPress="if(this.value.length==16) return false;">
 
                     <h2 id="txtValidoAte">Valido até</h2>
-                    <input type="month" name="Valido" id="dateValido" value="01-2000">
 
                     <h2 id="txtCVV">CVV</h2>
+                </form>
+
+                <form action="Número do cartão / Valido até / CVV" class="superiorNumeroValidoCvv">
+                    
+                    <input type="number" name="numeroCartao" id="numeroCartao" placeholder="XXXX XXXX XXXX XXXX" pattern="[\d]{4} [\d]{4} [\d]{4} [\d]{4}" onKeyPress="if(this.value.length==16) return false;">
+
+                    
+                    <input type="month" name="Valido" id="dateValido" value="01-2000">
+
+                    
                     <input type="number" id="cvv" placeholder="000" onKeyPress="if(this.value.length==3) return false;">
                 </form>
             </div>
@@ -240,6 +248,7 @@
     <!-- Coryright -->
     <div id="copyright">
         <a href="#"><p id="txtcoryright">copyright © 2023<br>Todos os direitos reservados</p></a>
-    </div>      
+    </div>
+
 </body>
 </html>

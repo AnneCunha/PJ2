@@ -213,16 +213,6 @@ body{
   cursor: pointer;
 }
 
-.campanhas, .beneficentes, select {
-  /* -webkit-appearance: none; */
-  /* -moz-appearance: none; */
-  /* appearance: none; */
-  background: url('https://static.vecteezy.com/system/resources/previews/000/379/802/original/double-arrow-vector-icon.jpg') no-repeat scroll right center transparent;
-  padding-right: 25px; /* ajuste o valor de acordo com o tamanho da imagem da seta */
-}
-
-
-
 .campanhas, .beneficentes, option {
 
   font-weight: 400;
@@ -309,7 +299,7 @@ input::-webkit-inner-spin-button {
   outline: none;
 
   font-size: 40px;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.700);
 }
 
 .superiorNumeroValidoCvv {
@@ -320,8 +310,68 @@ input::-webkit-inner-spin-button {
   margin-top: 430px;
 }
 
-.txtNumeroCartao {
+#txtTitulo {
+  display: flex;
   position: absolute;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 390px;
+}
+
+#txtNumeroCartao  {
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.700);
+
+  width: 651px;
+  height: 0%;
+  margin: 0px 10px 0px 0px;
+  padding: 0%;
+}
+
+#txtValidoAte {
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.700);
+
+  width: 124px;
+  height: 0%;
+  margin: 0px 10px 0px 0px;
+  padding: 0%
+}
+
+#txtCVV {
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.700);
+
+  width: 124px;
+  height: 0%;
+  margin: 0px 10px 0px 0px;
+  padding: 0%
 }
 
 #numeroCartao {
@@ -351,7 +401,10 @@ input::-webkit-inner-spin-button {
   
   margin-right: 10px;
   color: rgba(0, 0, 0, 0.7);
+  
 }
+
+
 
 #cvv {
   width: 124px;
@@ -401,13 +454,13 @@ input::-webkit-inner-spin-button {
 }
 
 
-.allTextoDescricaoPix, p {
+.allTextoDescricaoPix p {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   margin: 0%;
-  padding: 0% ;
+  padding: 0%;
 
   font-weight: 400;
   font-size: 24px;
@@ -741,4 +794,3 @@ input::-webkit-inner-spin-button {
   color: #A9E8AF;
   text-decoration: none;
 }
-
