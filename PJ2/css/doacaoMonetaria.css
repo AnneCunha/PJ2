@@ -213,6 +213,16 @@ body{
   cursor: pointer;
 }
 
+.campanhas, .beneficentes, select {
+  /* -webkit-appearance: none; */
+  /* -moz-appearance: none; */
+  /* appearance: none; */
+  background: url('https://static.vecteezy.com/system/resources/previews/000/379/802/original/double-arrow-vector-icon.jpg') no-repeat scroll right center transparent;
+  padding-right: 25px; /* ajuste o valor de acordo com o tamanho da imagem da seta */
+}
+
+
+
 .campanhas, .beneficentes, option {
 
   font-weight: 400;
@@ -417,7 +427,7 @@ input::-webkit-inner-spin-button {
   margin: 50px;
 }
 
-.btn {
+.btnDoar {
   background-color: white;
   color: black;
   border: 3px solid #465847;
@@ -436,7 +446,7 @@ input::-webkit-inner-spin-button {
   
 }
 
-.btn:hover {
+.btnDoar:hover {
 
   background-color: #273528;
   color: white;
@@ -731,6 +741,4 @@ input::-webkit-inner-spin-button {
   color: #A9E8AF;
   text-decoration: none;
 }
-
-  
 
