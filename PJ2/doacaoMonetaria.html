@@ -122,7 +122,7 @@
                     <input type="number" name="numeroCartao" id="numeroCartao" placeholder="XXXX XXXX XXXX XXXX" pattern="[\d]{4} [\d]{4} [\d]{4} [\d]{4}" onKeyPress="if(this.value.length==16) return false;">
 
                     
-                    <input type="month" name="Valido" id="dateValido" value="01-2000">
+                    <input type="text" name="Valido" id="dateValido" onKeyPress="if(this.value.length==7) return false;">
 
                     
                     <input type="number" id="cvv" placeholder="000" onKeyPress="if(this.value.length==3) return false;">
