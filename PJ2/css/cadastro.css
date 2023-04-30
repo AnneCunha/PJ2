@@ -134,6 +134,13 @@ body{
   
 }
 
+.wrapperCorpo {
+  max-width: 1000px;
+  padding-top: 59px;
+  margin: auto;
+}
+
+
 .cadastro{
   display: flex;
   justify-content: space-around;
