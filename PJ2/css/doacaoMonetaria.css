@@ -198,7 +198,7 @@ body{
 .campanhas, .beneficentes, #inputMonetario {
   box-sizing: border-box;
 
-  width: 474px;
+  width: 490px;
   height: 67px;
 
   background: #FFFFFF;
@@ -598,6 +598,7 @@ input::-webkit-inner-spin-button {
   background: #FFFEFE;
   border: 1px solid #4F8865;
   border-radius: 4px;
+  font-size: 19px;
 
   width: 290px;
   height: 40px;
