@@ -124,7 +124,7 @@ body{
     width: 1190px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 170px;
+    padding-bottom: 75px;
     margin-top: 50px  ;
   }
 
@@ -142,6 +142,7 @@ body{
 
 
 .cadastro{
+  max-width: 1000px;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -154,6 +155,20 @@ body{
   padding-inline: unset;
   white-space: nowrap;
    
+}
+
+.txtNameCadastro {
+  display: flex;
+  flex-direction: row;
+}
+
+#caixaCadastroText {
+  display: flex;
+  justify-content: center;
+}
+
+#textCadastroText {
+  font-size: 2.3em;
 }
 
 .txtNameCadastro, p {
@@ -176,7 +191,7 @@ body{
 
 .cadastro select {
   width: 200px;
-  height: 40px;
+  height: 35px;
   border-radius: 10px;
   border-style: solid;
   border-color: #4CAF50;
@@ -195,10 +210,8 @@ body{
 
 .coluna{
   float: left;
-  width: 50%;
   align-items: center;
   display: flex;
-      
 }
 .alinhar h3{
   font-size: 20px;
@@ -206,44 +219,50 @@ body{
 }
 .alinhar {
   display: flex;
+  justify-content: space-between;
   padding: 1%;
+  margin-top: 30p;
 }
 .cadastro-nome{
   width: 742px;
 }
 .cadastro-usuario{
-  width: 742px;
+  width: 748px;
 }
 .cadastro-cpf{
-  width: 355px;
+  width: 230px;
 
 }
 .cadastro-nascimento{
-  width: 355px;
+  width: 380px;
 
 }
 .cadastro-telefone{
-  width: 355px;
+  width: 380px;
 }
 .cadastro-email{
-  width: 600px;
+  width: 480px;
   
 }
 input[type=text] {
   height: 30px;
 }
 .cadastro-senha{
-  width: 508px;
+  width: 480px;
   height: 30px;
 }
 .check-box{
-  width: 30px;
+  width: 26px;
   height: 30px;
 }
 .check-box select{
   border-radius: 20%;
   border-style: double;
   border-color: #B063FF;
+}
+
+#termosCadastro {
+  width: 456px;
 }
 
 /*
@@ -542,4 +561,13 @@ input[type=text] {
 }
 
   
+#questCadastro {
+  display: flex;
+  flex-direction: column;
 
+}
+
+#questCadastroTermo {
+  display: flex;
+  flex-direction: column;
+}
