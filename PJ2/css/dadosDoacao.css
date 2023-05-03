@@ -327,6 +327,7 @@ corpo
 }
 
 
+
 #labelFormDoacao {
     margin-left: 25px;
     color: rgba(0, 0, 0, 0.5);
@@ -364,7 +365,6 @@ corpo
 }
 
 .upload {
-  margin-left: 50px;
   margin-top: 20px;
 
   width: 237px;
@@ -373,19 +373,47 @@ corpo
   border: solid black 2px;
   border-radius: 25px;
 
+  position: relative;
   display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
+
+.upload label {
+  position: absolute;
+  width: 25%;
+  top: 71%;
+  left: 30%;
+}
+
+.upload > img {
+  transform: scale(0.7);
+
+}
 .upload2 {
   margin-left: 50px;
   margin-top: 20px;
-  margin-right: 50px;
 
   width: 237px;
   height: 170px;
 
   border: solid black 2px;
   border-radius: 25px;
+
+  position: relative;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.upload2 label {
+  position: absolute;
+  width: 25%;
+  top: 71%;
+  left: 30%;
 }
 
 .upload-icon {
@@ -397,7 +425,49 @@ corpo
   cursor: pointer;
 }
 
+#divLinkUpload {
+  margin-top: 35px;
+}
 
+#divLinkUpload > label {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2em;
+}
+
+#textAreaDoacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#descricaoItens {
+  
+background: #FFFEFE;
+border: 3px solid #506C53;
+border-radius: 10px;
+}
+
+#adicionarItem {
+  background-color: white;
+  color: black;
+  border: 3px solid #465847;
+  border-radius: 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 19px;
+  margin: 3%;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  font-family: 'Anuphan', sans-serif;
+  min-height: 50px;
+  width: 200px;
+}
+
+#btnItemDoacao {
+  display: flex;
+  justify-content: center;
+}
 
 
 /*
