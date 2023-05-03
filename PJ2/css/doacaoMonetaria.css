@@ -123,6 +123,10 @@ body{
   Corpo
 */
 
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
   .corpo {
     margin-top: inherit;
     border-style: solid;
@@ -215,13 +219,14 @@ body{
 
 .campanhas, .beneficentes, option {
 
+
+  
   font-weight: 400;
   font-size: 32px;
   line-height: 46px;
 
   color: rgba(0, 0, 0, 0.5);
 }
-
 
 /*
     ImgDoador / txtDoador
@@ -248,11 +253,6 @@ body{
 /*
   Cartão / Img Cartão / Cadastros
 */
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
 
 .cartao {
   display: flex;
@@ -351,7 +351,7 @@ input::-webkit-inner-spin-button {
 
   width: 124px;
   height: 0%;
-  margin: 0px 10px 0px 0px;
+  margin: 0px 15px 0px 0px;
   padding: 0%
 }
 
@@ -370,7 +370,7 @@ input::-webkit-inner-spin-button {
 
   width: 124px;
   height: 0%;
-  margin: 0px 10px 0px 0px;
+  margin: 0px 0px 0px 0px;
   padding: 0%
 }
 
