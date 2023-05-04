@@ -15,22 +15,40 @@ background: fixed;
 font-family: 'Anuphan', sans-serif;
 background-image: url(https://trello.com/1/cards/6446d0d3f429609ff9e3aea5/attachments/6446d153f25f391c8ead5160/previews/6446d155f25f391c8ead53d9/download/BackgroundPJ2_2.png);
 }
+
+#logo{
+  position: relative;
+  height: 70px; 
+  width: 70px;
+  right: 470px;
+}
+
+#linkImgLogo {
+  text-decoration: none;
+}
+
 .logo-barra{
   display: flex;
   align-items: center; 
   margin: auto;    
 }
 
+#input-box {
+  padding-left: 45px;
+  border-radius: 40px;
+  height: 40px;
+  margin-top: 20px;
+}
+
 .search-box{
-width: 1000px;
-height: 30px;
-background: #fff;
-display: flex;
-align-items: center;
-border-radius: 60px;
-padding: 10px 25px; 
-justify-content: right;
-margin: auto;  
+  width: 1000px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 6px 25px;
+  justify-content: right;
+  margin: auto; 
 }
 
 .search-box input {
@@ -45,41 +63,34 @@ width: 980px;
 font-family: 'Anuphan', sans-serif;
 color: #B063FF;
 margin: auto;
-border-radius: 50px
 }
 
 .row{
 display: flex;
 flex-direction: row-reverse;
 
+align-items: center;
+
 }
 
 .row button img {
-width: 29px;
-border-radius: 25px;
-position: relative;
-right: 1px;
-}
+  width: 29px;
+  border-radius: 25px;
+  position: relative;
+  right: 1px;
+  }
 
 .row button {
-border: 0;
-border-radius: 50%;
-width: 30px;
-height: 30px;
-background: #fff;
-cursor: pointer;
-position: relative;
-right: -29px;
- 
-}
-
-#logo{
-  height: 70px; 
-  width: 70px;
+  border: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  cursor: pointer;
   position: relative;
-  right: 20px;
-  bottom: -4px;
-}
+  right: -33px;
+  top: 11px;
+  }
 
 
 .header-botoes{
@@ -118,7 +129,6 @@ right: -29px;
   margin: 3%;
   transition-duration: 0.5s;
   cursor: pointer;
-  font-family: 'Anuphan', sans-serif;
   font-size: 16px;
 }
 
@@ -134,7 +144,6 @@ right: -29px;
   border-color: #4CAF50;
   
   background: #A9E8AF;
-  font-family: 'Anuphan', sans-serif;
   font-size: 20px;
   width: 1190px;
   margin-left: auto;
@@ -154,10 +163,11 @@ Footer
 */
 
 #footer {
-margin-top: 100px;
-background-color: #A9E8AF;
 
-padding: 10px;
+  margin: 100px 0px 0px 0px;
+  background-color: #A9E8AF;
+
+  padding: 10px;
 }
 
 /*
@@ -604,7 +614,6 @@ padding-right: 510px;
   margin: 3%;
   transition-duration: 0.5s;
   cursor: pointer;
-  font-family: 'Anuphan', sans-serif;
   
 }
 .feedback .btn:hover{
@@ -628,11 +637,19 @@ position: relative;
 bottom: 4px;
 right: -528px;
 width: 160px;
+height: 41px;
 border-radius: 50px;
 
 }
 
 /* The popup form - hidden by default */
+
+.PopUpLogin {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .form-popup {
 display: none;
 position: fixed;
