@@ -7,7 +7,8 @@
   border-radius: 3px;
   background-color: #A9E8AF;
   color: violet; 
-  margin: auto;        
+  margin: auto;  
+  padding: 10px;      
 }
 body{
 margin: 0%;
@@ -24,13 +25,19 @@ background-image: url(https://trello.com/1/cards/6446d0d3f429609ff9e3aea5/attach
 .search-box{
 width: 1000px;
 height: 30px;
-background: #fff;
+
 display: flex;
 align-items: center;
 border-radius: 60px;
 padding: 10px 25px; 
-justify-content: right;
+justify-content: center;
 margin: auto;  
+}
+
+#input-box {
+  padding-left: 45px;
+  border-radius: 40px;
+  height: 40px;
 }
 
 .search-box input {
@@ -52,6 +59,8 @@ border-radius: 50px
 display: flex;
 flex-direction: row-reverse;
 
+align-items: center;
+
 }
 
 .row button img {
@@ -69,7 +78,7 @@ height: 30px;
 background: #fff;
 cursor: pointer;
 position: relative;
-right: -29px;
+right: -37px;
  
 }
 
@@ -77,8 +86,7 @@ right: -29px;
   height: 70px; 
   width: 70px;
   position: relative;
-  right: 20px;
-  bottom: -4px;
+  right: 464px;
 }
 
 
@@ -640,6 +648,11 @@ bottom: 0;
 right: 15px;
 border: 3px solid #f1f1f1;
 z-index: 9;
+}
+
+/* terceira div do header */
+.PopUpLogin {
+  position: relative;
 }
 
 /* Add styles to the form container */
