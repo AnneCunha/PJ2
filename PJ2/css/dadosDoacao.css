@@ -222,6 +222,11 @@ opacity: 1;
 /* 
 corpo
 */
+
+
+ input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+ }
   
 
 .corpo {
@@ -250,6 +255,7 @@ corpo
 .corpo {
     padding: 0px;
     display: flex;
+    padding-bottom: 30px;
 }
 
 .corpo > main {
@@ -287,15 +293,14 @@ corpo
 #linhaDoacao {
     border-right: solid gray 11px;
     border-radius: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 .campanhasDoacao {
     box-sizing: border-box;
 
     width: 439px;
-    height: 54px;
+    height: 67px;
   
     background: #FFFFFF;
   
@@ -329,32 +334,30 @@ corpo
 
 
 #labelFormDoacao {
-    margin-left: 25px;
+    margin-left: 20px;
     color: rgba(0, 0, 0, 0.5);
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 
 
 #labelDoacaoQuat {
-    margin-left: 25px;
+    margin-left: 20px;
     color: rgba(0, 0, 0, 0.5);
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 #inputQuantDoacao {
   box-sizing: border-box;
   width: 439px;
-  height: 54px;
+  height: 67px;
   background: #FFFFFF;
   border: 4px solid #506C53;
   border-radius: 10px;
   font-size: 32px;
   outline: none;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.5);
 
-  padding: 25px;
 }
 
 #fotosItensDoados {
@@ -467,6 +470,10 @@ border-radius: 10px;
 #btnItemDoacao {
   display: flex;
   justify-content: center;
+}
+
+#colunasFotos2 {
+  margin-left: 30px;
 }
 
 
