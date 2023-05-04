@@ -18,8 +18,6 @@
     <!-- Header -->
         <div class="header">
             <div class="logo-barra">
-                <img src="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png" height="70px" width="70px">
-
                 <div class="search-box">
                     <div class="row">
                         <input type="text" id="input-box" autocomplete="off">
@@ -34,18 +32,48 @@
                 <button type="submit" class="btn">Ajuda Monetária</button>
                 <button type="submit" class="btn">Login</button>
             </nav>
+
+            <div class="PopUpLogin">
+                <!-- Logo do Site -->
+                <a href="#" id="linkImgLogo">
+                    <img src="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png" height="70px" width="70px" id="logo">
+                </a>
+                <button class="open-button" onclick="openForm()">Fazer Login</button>
+                
+                    <!-- The form -->
+                    <div class="form-popup" id="myForm">
+                        <form action="/action_page.php" class="form-container">
+                            <h1>Login</h1>
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Email" name="email" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Senha" name="psw" required>
+
+                            <button type="submit" class="btn">Login</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+                        </form>
+                    </div>  
+                    <script>
+                        function openForm() {
+                        document.getElementById("myForm").style.display = "block";
+                        }
+                        
+                        function closeForm() {
+                        document.getElementById("myForm").style.display = "none";
+                        }
+                    </script>
+            </div>
         </div>
     
         <!-- Body -->
     <div class="corpo">
         <div class="wrapperCorpo">
-            <!-- <h1 id="tituloCorpo">Dados de doação monetária</h1> -->
-
             <div class="allRegistro">
                 <div class="registro">
                     <form action="CategoriaCampanhas">
                         <h1 id="tituloCorpo">Dados de doação monetária</h1>
-                        <!-- <input type="text" list="Campanhas" placeholder="Categoria de Campanhas" id="inputCampanhas"> -->
                         <select class="campanhas">
                             <option value="0" >Campanhas</option>
                             <option value="1">Saúde</option>
@@ -58,7 +86,6 @@
                     </form>
 
                     <form action="beneficente">
-                        <!-- <input type="text" list="Beneficentes" placeholder="Beneficentes" id="inputBeneficentes"> -->
                         <select class="beneficentes" aria-placeholder="Beneficentes">
                             <option value="0">Beneficentes</option>
                             <option value="1">exemplo</option>
