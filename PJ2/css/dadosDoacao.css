@@ -1,3 +1,7 @@
+* {
+  font-family: 'Anuphan', sans-serif;
+}
+
 /*
 Wrapper
 */
@@ -28,22 +32,40 @@ header
   font-family: 'Anuphan', sans-serif;
   background-image: url(https://trello.com/1/cards/6446d0d3f429609ff9e3aea5/attachments/6446d153f25f391c8ead5160/previews/6446d155f25f391c8ead53d9/download/BackgroundPJ2_2.png);
   }
+  #logo{
+    position: relative;
+    height: 70px; 
+    width: 70px;
+    right: 470px;
+    top: 15px;
+  }
+  
+  #linkImgLogo {
+    text-decoration: none;
+  }
+  
   .logo-barra{
     display: flex;
     align-items: center; 
     margin: auto;    
   }
   
+  #input-box {
+    padding-left: 45px;
+    border-radius: 40px;
+    height: 40px;
+    margin-top: 20px;
+  }
+  
   .search-box{
-  width: 1000px;
-  height: 30px;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  border-radius: 60px;
-  padding: 10px 25px; 
-  justify-content: right;
-  margin: auto;  
+    width: 1000px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 6px 25px;
+    justify-content: right;
+    margin: auto; 
   }
   
   .search-box input {
@@ -58,41 +80,35 @@ header
   font-family: 'Anuphan', sans-serif;
   color: #B063FF;
   margin: auto;
-  border-radius: 50px
   }
   
   .row{
   display: flex;
   flex-direction: row-reverse;
   
+  align-items: center;
+  
   }
   
   .row button img {
-  width: 29px;
-  border-radius: 25px;
-  position: relative;
-  right: 1px;
-  }
+    width: 29px;
+    border-radius: 25px;
+    position: relative;
+    right: 1px;
+    }
   
   .row button {
-  border: 0;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  background: #fff;
-  cursor: pointer;
-  position: relative;
-  right: -29px;
-   
-  }
-  
-  #logo{
-    height: 70px; 
-    width: 70px;
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    cursor: pointer;
     position: relative;
-    right: 20px;
-    bottom: -4px;
-  }
+    right: -33px;
+    top: 11px;
+    }
+  
   
   
   .header-botoes{
@@ -272,7 +288,6 @@ corpo
     text-shadow: 0px 4px 4px
     rgba(0, 0, 0, 0.25);
 
-    font-family: 'Istok Web';
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
@@ -357,7 +372,7 @@ corpo
   font-size: 32px;
   outline: none;
   cursor: pointer;
-
+  padding-left: 25px;
 }
 
 #fotosItensDoados {
@@ -451,7 +466,7 @@ border: 3px solid #506C53;
 border-radius: 10px;
 }
 
-#adicionarItem {
+.adicionarItem {
   background-color: white;
   color: black;
   border: 3px solid #465847;
@@ -467,15 +482,227 @@ border-radius: 10px;
   width: 200px;
 }
 
-#btnItemDoacao {
+.btnItemDoacao {
   display: flex;
   justify-content: center;
+
+  margin-top: 25px;
 }
 
 #colunasFotos2 {
   margin-left: 30px;
 }
 
+
+/* 
+Aside 
+*/
+
+#asideDoacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+ 
+}
+
+#itensAdicionados {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#itensAdicionados > h3 {
+  margin: 0px;
+  padding-left: 10px;
+  
+}
+
+#textBoxDoados {
+  width: 238px;
+  height: 35px;
+
+  font-family: 'Istok Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.5);
+
+}
+
+#caixaAdicionados {
+  box-sizing: border-box;
+
+  width: 490px;
+  height: 330px;
+
+  background: #FFFEFE;
+  border: 3px solid #506C53;
+  border-radius: 10px;
+
+  padding: 20px;
+  overflow: auto;
+}
+
+.divTextDoados {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 55%;
+}
+
+.divTraçoDoados {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+.divQuantDoados {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+} 
+
+.caixaDoado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.textItensDoados {
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.inputEntrega {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+#formDoacao {
+  padding-left: 25px;
+}
+
+#enderecoIntrega {
+  box-sizing: border-box;
+
+  width: 391px;
+  height: 54px;
+
+  background: #FFFEFE;
+  border: 3px solid #506C53;
+  border-radius: 10px;
+  font-size: 32px;
+
+  color: #506C53;
+}
+
+#cidade {
+  box-sizing: border-box;
+
+  width: 391px;
+  height: 54px;
+
+  background: #FFFEFE;
+  border: 3px solid #506C53;
+  border-radius: 10px;
+  font-size: 32px;
+
+  color: #506C53;
+}
+
+#cep {
+  box-sizing: border-box;
+
+  width: 391px;
+  height: 54px;
+
+  background: #FFFEFE;
+  border: 3px solid #506C53;
+  border-radius: 10px;
+  font-size: 32px;
+
+  color: #506C53;
+}
+
+#telefone {
+  box-sizing: border-box;
+
+  width: 391px;
+  height: 54px;
+
+  background: #FFFEFE;
+  border: 3px solid #506C53;
+  border-radius: 10px;
+  font-size: 32px;
+
+  color: #506C53;
+}
+
+#hora {
+  box-sizing: border-box;
+  font-size: 27px;
+
+  width: 119px;
+  height: 54px;
+
+  background: #FFFEFE;
+  border: 3px solid #506C53;
+  border-radius: 10px;
+
+  color: #506C53;
+}
+
+#dataEntrega {
+  box-sizing: border-box;
+  font-size: 1.3em;
+
+  width: 250px;
+  height: 54px;
+  
+  background: #FFFEFE;
+  border: 3px solid #506C53;
+  border-radius: 10px;
+
+  color: #506C53;
+}
+
+#btnDoar {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#itemDoado {
+  box-sizing: border-box;
+
+  width: 255.52px;
+  height: 64.91px;
+
+  background: #FFFEFE;
+  border: 3px solid #506C53;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+
+  color: #506C53;
+  
+}
+
+.adicionarItem:houver {
+  background-color: #273528;
+  color: white;
+}
 
 /*
 Footer

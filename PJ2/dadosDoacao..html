@@ -18,26 +18,26 @@
     <!-- Header -->
     <div class="header">
         <div class="logo-barra">
-            <img src="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png"
-                height="70px" width="70px" id="logo">
 
-            <div class="search-box">
-                <div class="row">
-                    <input type="text" id="input-box" autocomplete="off">
-                    <button type="submit"><img
-                            src="https://trello.com/1/cards/6415fa7fa0463b928860f307/attachments/643dc8e57d8a22909cc4361c/previews/643dc8e67d8a22909cc43624/download/LupaRoxa.png"></button>
+                <div class="search-box">
+                    <div class="row">
+                        <input type="text" id="input-box" autocomplete="off">
+                        <button type="submit"><img src="https://trello.com/1/cards/6415fa7fa0463b928860f307/attachments/643dc8e57d8a22909cc4361c/previews/643dc8e67d8a22909cc43624/download/LupaRoxa.png"></button>
+                    </div>
                 </div>
-            </div>
         </div>
 
         <nav class="header-botoes">
             <button type="submit" class="btn">Home</button>
             <button type="submit" class="btn">Requisitar</button>
             <button type="submit" class="btn">Ajuda Monetária</button>
-            <button type="submit" class="btn">Login</button>
         </nav>
 
         <div class="PopUpLogin">
+            
+            <img src="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png"
+            height="70px" width="70px" id="logo">
+
             <button class="open-button" onclick="openForm()">Fazer Login</button>
 
             <!-- The form -->
@@ -181,8 +181,8 @@
                 <label for="" style="font-size: 1.2em; color: rgba(0, 0, 0, 0.5);"> descrição do item:</label>
                 <textarea name="descricaoItens" id="descricaoItens" style="width: 500px; height: 250px; resize: none; font-size: 1.3em;" ></textarea>
 
-                <div id="btnItemDoacao">
-                <button type="submit" id="adicionarItem">Adicionar Item</button>
+                <div class="btnItemDoacao">
+                <button type="submit" class="adicionarItem" style="font-size: 1.3em; color: #506C53;">Adicionar Item</button>
                 </div>
             </div>
 
@@ -200,7 +200,163 @@
         <!-- aside-->
 
         <aside id="asideDoacao">
-                
+                <div id="itensAdicionados">
+
+                    <h3 id="textBoxDoados">Itens Adicionados</h3>
+
+                    <div id="caixaAdicionados">
+                        <div class="caixaDoado">
+
+                            <div class="divTextDoados">
+                            <p class="textItensDoados">Produtos de higiene</p>
+                            </div>
+
+                            <div class="divTraçoDoados">
+                                <p class="textItensDoados">-</p>
+                            </div>
+
+                            <div class="divQuantDoados">
+                                <p class="textItensDoados">4</p>
+                            </div>
+                             
+                        </div>
+
+                        <div class="caixaDoado">
+
+                            <div class="divTextDoados">
+                                <p class="textItensDoados">Produtos de limpeza</p>
+                            </div>
+    
+                            <div class="divTraçoDoados">
+                                <p class="textItensDoados">-</p>
+                            </div>
+    
+                            <div class="divQuantDoados">
+                                <p class="textItensDoados">20</p>
+                            </div>
+                        </div>
+
+                        <div class="caixaDoado">
+
+                            <div class="divTextDoados">
+                                <p class="textItensDoados">Roupas</p>
+                            </div>
+    
+                            <div class="divTraçoDoados">
+                                <p class="textItensDoados">-</p>
+                            </div>
+    
+                            <div class="divQuantDoados">
+                                <p class="textItensDoados">34</p>
+                            </div>
+
+                        </div>
+
+                        <div class="caixaDoado">
+
+                            <div class="divTextDoados">
+                                <p class="textItensDoados">Alimentos</p>
+                            </div>
+    
+                            <div class="divTraçoDoados">
+                                <p class="textItensDoados">-</p>
+                            </div>
+    
+                            <div class="divQuantDoados">
+                                <p class="textItensDoados">14</p>
+                            </div>
+
+                        </div>
+
+                        <div class="caixaDoado">
+
+                            <div class="divTextDoados">
+                                <p class="textItensDoados">medicamentos</p>
+                            </div>
+    
+                            <div class="divTraçoDoados">
+                                <p class="textItensDoados">-</p>
+                            </div>
+    
+                            <div class="divQuantDoados">
+                                <p class="textItensDoados">22</p>
+                            </div>
+
+                        </div>
+
+                        <div class="caixaDoado">
+
+                            <div class="divTextDoados">
+                                <p class="textItensDoados">Ração/medicamentos para pets</p>
+                            </div>
+    
+                            <div class="divTraçoDoados">
+                                <p class="textItensDoados">-</p>
+                            </div>
+    
+                            <div class="divQuantDoados">
+                                <p class="textItensDoados">49</p>
+                            </div>
+
+                        </div>
+
+                        
+                </div>
+
+                <div id="formDoacao">
+
+                    <div class="inputEntrega">
+
+                    <label for="endereco" style="font-size: 1.3em; color: #506C53;">Endereço de entrega</label>
+                    <INput type="text" id="enderecoIntrega"></INput>
+
+                    </div>
+
+                    <div class="inputEntrega">
+
+                    <label for="cidade" style="font-size: 1.3em; color: #506C53;">Cidade</label>
+                    <INput type="text" id="cidade"></INput>
+    
+                    </div>
+
+                    <div class="inputEntrega">
+
+                        <label for="CEP" style="font-size: 1.3em; color: #506C53;">CEP</label>
+                        <INput type="text" id="cep" placeholder="00000-000"></INput>
+        
+                    </div>
+    
+                    <div class="inputEntrega">
+
+                        <label for="telefone" style="font-size: 1.3em; color: #506C53;">telefone</label>
+                        <INput type="text" id="telefone" placeholder="( 00 ) 00000 - 0000"></INput>
+        
+                    </div>
+
+                    <div class="inputEntrega">
+
+                        <label for="cidade" style="font-size: 1.3em; color: #506C53;">Selecione a hora de entrega:</label>
+                        <INput type="time" id="hora" placeholder="10:00"></INput>
+        
+                    </div>
+
+                    <div class="inputEntrega">
+
+                        <label for="cidade" style="font-size: 1.3em; color: #506C53;">Selecione a data</label>
+                        <INput type="date" id="dataEntrega" placeholder="14 / 06 / 2023"></INput>
+        
+                    </div>
+
+
+
+                </div>
+
+                <div id="btnDoar">
+                    <button type="submit" id="itemDoado" style="font-size: 1.3em; color: #506C53;">
+                        Finalizar Doação
+                    </button>
+                </div>
+
         </aside>
 
     </div>
