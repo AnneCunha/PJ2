@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=], initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajuda Sem Fronteiras</title>
 
     <link rel="icon" type="image/png"
@@ -352,9 +352,7 @@
                 </div>
 
                 <div id="btnDoar">
-                    <button type="submit" id="itemDoado" style="font-size: 1.3em; color: #506C53;">
-                        Finalizar Doação
-                    </button>
+                    <button type="submit" id="itemDoado" style="font-size: 1.3em; color: #506C53;">Finalizar Doação</button>
                 </div>
 
         </aside>
@@ -480,14 +478,13 @@
 
         let uploadDivs = document.querySelectorAll('.upload');
         for (const uploadDiv of uploadDivs) {
-            uploadDiv.addEventListener('click', function (event) {
+            uploadDiv.addEventListener('change', function (event) {
+                
                 let elem = event.currentTarget;
 
-              //  if (event.target.files != undefined) {
-                    let x = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
-                    elem.style.backgroundImage = x;
-                    
-        //        }
+                
+                elem.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+
             });
         }
     </script>

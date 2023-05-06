@@ -685,18 +685,19 @@ Aside
 }
 
 #itemDoado {
-  box-sizing: border-box;
-
-  width: 255.52px;
-  height: 64.91px;
-
-  background: #FFFEFE;
-  border: 3px solid #506C53;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
-
-  color: #506C53;
-  
+    background-color: white;
+    color: black;
+    border: 3px solid #465847;
+    border-radius: 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 19px;
+    margin: 3%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-family: 'Anuphan', sans-serif;
+    width: 255.52px;
+    height: 64.91px;
 }
 
 .adicionarItem:houver {
