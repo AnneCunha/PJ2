@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png"
         href="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png" />
 
-    <link rel="stylesheet" href="css/dadosDoacao.css">
+    <link rel="stylesheet" href="css/requerimento.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
 
         <nav class="header-botoes">
             <button type="submit" class="btn">Home</button>
-            <button type="submit" class="btn">Requisitar</button>
+            <button type="submit" class="btn">Doar</button>
             <button type="submit" class="btn">Ajuda Monetária</button>
         </nav>
 
@@ -78,9 +78,11 @@
 
         <main id="mainDoacao">
 
-            <h1>Dados da Doação</h1>
+            <h1>Requerimento</h1>
 
             <!-- select das categorias de doação-->
+
+            <div id="corpoRequerimento">
 
             <div class="formDoacao">
                 <label for="select_campanhasDoacao" id="labelFormDoacao">Qual a categoria do produto</label>
@@ -106,81 +108,14 @@
                 </form>
             </div>
 
-            <!-- upload das imagens dos itens doados-->
-
-            <div id="fotosItensDoados">
-
-                <!-- coluna 1 -->
-
-                <div id="colunasFotos1">
-
-                        <div class="upload" id="uploadImage1">
-
-                            <input type="file" id="imageDoado1" name="file1" accept="image/*" style="display: none;">
-                            <label for="imageDoado1"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
-                             class="upload-icon"></label>
-
-                        </div>
-
-                        <div class="upload" id="uploadImage2">
-
-                            <input type="file" id="imageDoado2" name="file2" accept="image/*" style="display: none;"
-                             onclick="loadFile2(event)">
-                            <label for="imageDoado2"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
-                             class="upload-icon"></label>
-                        </div>
-
-                        <div class="upload" id="uploadImage3">
-
-                            <input type="file" id="imageDoado3" name="file3" accept="image/*" style="display: none;"
-                             onclick="loadFile3(event)">
-                            <label for="imageDoado3"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
-                             class="upload-icon"></label>
-                        </div>
-
-                    </div>
-
-                    <!-- coluna 2 -->
-
-                    <div id="colunasFotos2">
-
-                            <div class="upload" id="uploadImage4">
-                                <input type="file" id="imageDoado4" name="img" accept="image/*" style="display: none;"
-                                 onclick="loadFile4(event)">
-                                <label for="imageDoado4"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
-                                 class="upload-icon"></label>
-                            </div>
-
-                            <div class="upload" id="uploadImage5">
-                                <input type="file" id="imageDoado5" name="img" accept="image/*" style="display: none;"
-                                 onclick="loadFile5(event)">
-                                <label for="imageDoado5"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
-                                 class="upload-icon"></label>
-                            </div>
-
-                            <div class="upload" id="uploadImage6">
-                                <input type="file" id="imageDoado6" name="img" accept="image/*" style="display: none;"
-                                 onclick="loadFile6(event)">
-                                <label for="imageDoado6"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
-                                 class="upload-icon"></label>
-                            </div>
-
-                    </div>
-
-            </div>
-
-            
-            <!-- text upload image not function-->
-
-            <div id="divLinkUpload" style="display: flex; justify-content: center;">
-                <input type="file" style="display: none;" id="LinkUploadText" name="LinkUploadText">
-                <label for="LinkUploadText"><u>Adicionar imagem do produto </u></label>
-            </div>
-
             <div id="textAreaDoacao">
-                <label for="" style="font-size: 1.2em; color: rgba(0, 0, 0, 0.5);"> Descrição do item:</label>
+                <label for="" style="font-size: 1.5em; color: rgba(0, 0, 0, 0.5); padding-left: 20px;"> Descrição do item:</label>
                 <textarea name="descricaoItens" id="descricaoItens" style="width: 500px; height: 250px; resize: none; font-size: 1.3em;" ></textarea>
+            </div>
 
+            </div>
+
+            <div id="divBtnRequerimento">
                 <div class="btnItemDoacao">
                 <button type="submit" class="adicionarItem" style="font-size: 1.3em; color: #506C53;">Adicionar Item</button>
                 </div>
@@ -207,7 +142,7 @@
                     <div id="caixaAdicionados">
                         <div class="caixaDoado">
 
-                            <div class="divTextDoados">
+                            <!-- <div class="divTextDoados">
                             <p class="textItensDoados">Produtos de higiene</p>
                             </div>
 
@@ -296,7 +231,7 @@
     
                             <div class="divQuantDoados">
                                 <p class="textItensDoados">49</p>
-                            </div>
+                            </div> -->
 
                         </div>
 
@@ -352,7 +287,7 @@
                 </div>
 
                 <div id="btnDoar">
-                    <button type="submit" id="itemDoado" style="font-size: 1.3em; color: #506C53;">Finalizar Doação</button>
+                    <button type="submit" id="itemDoado" style="font-size: 1.3em; color: #506C53;">Finalizar</button>
                 </div>
 
         </aside>
@@ -462,32 +397,6 @@
     </div>
 
     <!-- FIM do footer -->
-
-
-    <!-- Script -->
-
-    <script>
-
-        let uploadImage1 = document.getElementById("uploadImage1");
-        let uploadImage2 = document.getElementById("uploadImage2");
-        let uploadImage3 = document.getElementById("uploadImage3");
-        let uploadImage4 = document.getElementById("uploadImage4");
-        let uploadImage5 = document.getElementById("uploadImage5");
-        let uploadImage6 = document.getElementById("uploadImage6");
-        let iconUpload = document.getElementsByClassName("upload-icon")
-
-        let uploadDivs = document.querySelectorAll('.upload');
-        for (const uploadDiv of uploadDivs) {
-            uploadDiv.addEventListener('change', function (event) {
-                
-                let elem = event.currentTarget;
-
-                
-                elem.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
-
-            });
-        }
-    </script>
 
 </body>
 
