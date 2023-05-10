@@ -108,6 +108,8 @@ body {
   margin: 0px 0px 50px 0px;
 
   color: #506C53;
+
+  animation: HeroFullIllustration_fadeIn__B12D_ .4s linear .4s forwards;
 }
 
 /*
@@ -199,7 +201,6 @@ body {
 .caixa .img img {
   width: 327px;
   height: 227px;
-  object-fit: cover;
 
   border: solid 5px #91CB96;
   border-radius: 7px;
