@@ -1,24 +1,36 @@
-.header{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-style: solid;
-    border-radius: 3px;
-    background-color: #A9E8AF;
-    color: violet; 
-    margin: auto;        
-}
 body{
   margin: 0%;
   background: fixed;
   font-family: 'Anuphan', sans-serif;
   background-image: url(https://trello.com/1/cards/6446d0d3f429609ff9e3aea5/attachments/6446d1489431ff7a1efc7b47/previews/6446d14a9431ff7a1efc7b58/download/BackgroundPJ2_1.png);
 }
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1px;
+    background-color: #A9E8AF;
+    margin: auto;        
+}
+
+.allLogoSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .logo-barra{
     display: flex;
     align-items: center; 
-    margin: auto;    
+    margin: auto;   
+}
+
+.logo-barra img {
+  margin: 56px 77px 0px 0px;
+  border: 1px solid #91CB96;
+  border-radius: 10px;
 }
 
 .search-box{
@@ -30,7 +42,8 @@ body{
   border-radius: 60px;
   padding: 10px 25px; 
   justify-content: right;
-  margin: auto;  
+  margin-top: 56px;
+  border: 3px solid #B063FF;
 }
 
 .search-box input {
@@ -42,7 +55,6 @@ body{
   font-size: 20px;
   height: 28px;
   width: 980px;
-  font-family: 'Anuphan', sans-serif;
   color: #B063FF;
   margin: auto;
 }
@@ -73,6 +85,7 @@ body{
     height: 85px;
     filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
     align-items: center;
+    justify-content: space-between;
 }
 
 .button {
@@ -92,19 +105,17 @@ body{
   .btn {
     background-color: white;
     color: black;
-    border: 2px solid #B063FF;
+    border: 3px solid #B063FF;
     width: 220px;
     height: 37px;
     border-radius: 20px;
     padding: 5px 10px;
     text-align: center;
     display: inline-block;
-    font-size: 15px;
     margin: 3%;
     transition-duration: 0.5s;
     cursor: pointer;
-    font-family: 'Anuphan', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .btn:hover {
@@ -119,7 +130,6 @@ body{
     border-color: #4CAF50;
     
     background: #A9E8AF;
-    font-family: 'Anuphan', sans-serif;
     font-size: 20px;
     width: 1190px;
     margin-left: auto;
@@ -149,7 +159,6 @@ body{
   align-items: flex-end;
   padding: 1%; 
   padding-bottom: 1%; 
-  font-family: 'Anuphan', sans-serif;
   font-size: 20px;
   color: #000000;
   padding-inline: unset;
@@ -184,7 +193,6 @@ body{
   border-radius: 10px;
   border-style: solid;
   border-color: #4CAF50;
-  font-family: 'Anuphan', sans-serif;
   font-size: 20px;
   color: #000000;
 }
