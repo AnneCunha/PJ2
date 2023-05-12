@@ -464,9 +464,9 @@ body {
 }
   
 .imagemTituloEscolherCampanha {
-  background-color: #f8f8f8;
+  background-color: white;
   border-radius: 1rem;
-  border: 0.125rem solid #f8f8f8;
+  border: 0.125rem solid white;
   transition: border-color .3s ease-in-out;
   cursor: pointer;
   width: 16.625rem;
@@ -474,7 +474,7 @@ body {
 }
 
 .imagemTituloEscolherCampanha:hover {
-  border: solid 2px #02a95c;
+  border: solid 3px #02a95c;
 }
 
 
