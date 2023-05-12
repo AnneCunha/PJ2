@@ -806,6 +806,7 @@ input::-webkit-inner-spin-button {
 
   width: 70px;
   height: 70px;
+  cursor: pointer;
 
 }
 
@@ -817,6 +818,7 @@ input::-webkit-inner-spin-button {
   line-height: 25px;
   text-align: center;
 
+
   color: #B063FF;
 }
 
@@ -826,6 +828,7 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
   font-size: 15px;
   line-height: 19px;
+  cursor: pointer;
 
   color: #B063FF;
 }

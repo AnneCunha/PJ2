@@ -396,7 +396,7 @@ body {
 
 .perguntas.active .resposta {
   max-width: 300px;
-  animation: fade 1s ease-in-out;
+  animation: 1s ease-in-out;
 }
 
 .perguntas.active i {
@@ -641,6 +641,7 @@ body {
   background: #FFFEFE;
   border: 1px solid #4F8865;
   border-radius: 4px;
+  font-size: 19px;
 
   width: 290px;
   height: 40px;
