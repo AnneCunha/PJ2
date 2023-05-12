@@ -1,0 +1,719 @@
+body {
+    margin: 0%;
+    background: fixed;
+    font-family: 'Anuphan', sans-serif;
+    background-image: url(https://trello.com/1/cards/6446d0d3f429609ff9e3aea5/attachments/6446d1489431ff7a1efc7b47/previews/6446d14a9431ff7a1efc7b58/download/BackgroundPJ2_1.png);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1px;
+    background-color: #A9E8AF;
+    margin: auto;
+}
+
+.allLogoSearch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-barra {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.logo-barra img {
+    margin: 56px 77px 0px 0px;
+    border: 1px solid #91CB96;
+    border-radius: 10px;
+}
+
+.search-box {
+    width: 1000px;
+    height: 30px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 25px;
+    justify-content: right;
+    margin-top: 56px;
+    border: 3px solid #B063FF;
+}
+
+.search-box input {
+    background: #fff;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: auto;
+    font-size: 20px;
+    height: 28px;
+    width: 980px;
+    color: #B063FF;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.row button img {
+    width: 30px;
+}
+
+.row button {
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    cursor: pointer;
+}
+
+
+.header-botoes {
+    display: flex;
+    width: 905px;
+    height: 85px;
+    filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 26px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 2px;
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border: 3px solid #B063FF;
+    width: 220px;
+    height: 37px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    margin: 3%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #B063FF;
+    color: white;
+}
+
+.corpo {
+    margin-top: inherit;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #4CAF50;
+
+    background: #A9E8AF;
+    font-size: 20px;
+    width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 75px;
+    margin-top: 50px;
+}
+
+/*
+  corpo
+  */
+
+.corpo h1 {
+    color: #4CAF50;
+    padding: 50px;
+
+}
+
+.wrapperCorpo {
+    max-width: 1000px;
+    padding-top: 59px;
+    margin: auto;
+}
+
+#fotoUsuarioDiv {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+}
+
+#fotoUsuario {
+    width: 300px;
+
+    border: solid black 2px;
+}
+
+#fotoUsuario>label>img {
+    width: 100%;
+    height: 100%;
+}
+
+#dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inoutDados {
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna {
+    min-width: 844px;
+
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+
+    margin-top: 15px;
+}
+
+label {
+    font-size: 1.3em;
+}
+
+input {
+padding: 12px 18px;
+}
+
+/* 
+coluna1 
+*/
+
+#inputName {
+
+    box-sizing: border-box;
+
+    width: 844px;
+    height: 64px;
+
+    background: #FFFFFF;
+    border: 3px solid #506C53;
+    border-radius: 10px;
+
+    font-size: 1.5em;
+}
+
+
+
+/*
+coluna2
+*/
+
+#nomeUsuario {
+    box-sizing: border-box;
+    min-width: 564px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 3px solid #506C53;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+#cpf {
+    box-sizing: border-box;
+    max-width: 260px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 3px solid #506C53;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+/*
+coluna3
+*/
+
+
+
+#nasc {
+    box-sizing: border-box;
+    min-width: 240px;
+    min-height: 64px;
+    background: #FFFFFF;
+    border: 3px solid #506C53;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+#sexo {
+    box-sizing: border-box;
+    min-width: 190px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 3px solid #506C53;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+
+#telefone {
+    box-sizing: border-box;
+    max-width: 260px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 3px solid #506C53;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+/* 
+coluna4  
+*/
+
+#email {
+    box-sizing: border-box;
+    min-width: 508px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 3px solid #506C53;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+#senha {
+    box-sizing: border-box;
+    max-width: 316px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 3px solid #506C53;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+/*
+Botões 
+*/
+
+#botoes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btnEditar {
+    min-width: 195px;
+    min-height: 55px;
+    border-radius: 50px;
+    border: 3px solid #506C53;
+    font-size: 25px;
+}
+
+#btnSalvar{
+    min-width: 195px;
+    min-height: 55px;
+    border-radius: 50px;
+    border: 3px solid #506C53;
+    font-size: 25px;
+}
+
+/*
+caixa overflow
+*/
+
+#lista {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+
+    margin-top: 35px;
+}
+
+.overFlow {
+    box-sizing: border-box;
+  
+    width: 500px;
+    height: 360px;
+  
+    background: #FFFEFE;
+    border: 3px solid #506C53;
+    border-radius: 10px;
+  
+    padding: 20px;
+    overflow: auto;
+}
+
+.overFlow > h2 {
+    font-size: 28px;
+    text-align: center;
+
+    margin-top: 0px;
+}
+
+.caixaDoado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+
+
+/*
+    Footer
+  */
+
+#footer {
+    margin-top: 100px;
+    background-color: #A9E8AF;
+
+    padding: 10px;
+}
+
+/*
+    Wrapper
+  */
+
+.wrapper {
+    max-width: 1320px;
+    margin: auto;
+}
+
+/*
+    All Foooter
+  */
+
+.allFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 30px;
+}
+
+.allFooter>div {
+    width: 400px;
+}
+
+
+/*
+    Email / Assinar
+  */
+.textoAssinar {
+    display: flex;
+    flex-direction: column;
+}
+
+#allEmailButton {
+    display: flex;
+    flex-direction: row;
+}
+
+#txth3 {
+    display: flex;
+    position: static;
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    justify-content: center;
+
+    color: #273528;
+
+    margin: 0px 100px 0px 0px;
+
+}
+
+#txtp {
+    display: flex;
+    position: static;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    justify-content: center;
+
+    color: #506C53;
+
+    margin: 0px 100px 14px 0px;
+
+}
+
+#txtEmail {
+    position: static;
+    float: left;
+
+    outline: none;
+    border-radius: 3px;
+    background: #FFFEFE;
+    border: 1px solid #4F8865;
+    border-radius: 4px;
+
+    width: 290px;
+    height: 40px;
+}
+
+#elemButton {
+    float: left;
+    position: static;
+
+    width: 90px;
+    height: 44px;
+    margin: 0px 0px 0px 8px;
+
+    background: #506d53;
+    border: 1px solid #506C53;
+    filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.25));
+    border-radius: 4px;
+    color: white;
+
+    cursor: pointer;
+    transition-duration: 0.5s;
+
+}
+
+#elemButton:hover {
+    background-color: #465847;
+    color: white;
+}
+
+/*
+      Rede Sociais Footer
+    */
+
+.redesSocial img {
+    position: absolute;
+}
+
+#icon01 {
+    position: static;
+
+    width: 30px;
+    height: 30px;
+
+    margin-top: 10px;
+}
+
+#icon02,
+#icon03,
+#icon04,
+#icon05,
+#icon06 {
+    position: static;
+
+    width: 30px;
+    height: 30px;
+
+    margin-top: 10px;
+    margin-left: 25px;
+
+}
+
+.redesSocial,
+a {
+    text-decoration: none;
+}
+
+/*
+    Logo / Name
+  */
+
+.logoName {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin: 0%;
+    padding: 0%;
+}
+
+#logoFooter {
+    display: flex;
+    position: static;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 70px;
+    height: 70px;
+
+}
+
+#txtLogoName01 {
+    margin: 15px 0px 0px 0px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+
+    color: #B063FF;
+}
+
+#txtLogoName02 {
+    margin: 4px 0px 10px 0px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+
+    color: #B063FF;
+}
+
+
+/*
+    Apoiadores
+  */
+
+.apoiadores {
+    display: flex;
+    position: static;
+
+    flex-direction: column;
+
+}
+
+#txtApoiadores {
+    display: flex;
+    position: static;
+
+    justify-content: center;
+    margin: 0%;
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+
+    color: #273528;
+}
+
+.allApoiadoresTop {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#iconApoiadores01,
+#iconApoiadores02,
+#iconApoiadores03,
+#iconApoiadores04 {
+    position: static;
+
+    text-decoration: none;
+
+    margin-top: 10px;
+    margin-right: 40px;
+    padding: 0%;
+    width: 70px;
+    height: 30px;
+}
+
+.allApoiadoresEnd {
+    display: flex;
+    flex-direction: row;
+}
+
+#iconApoiadores05,
+#iconApoiadores06,
+#iconApoiadores07,
+#iconApoiadores08 {
+    position: static;
+
+    text-decoration: none;
+
+    margin-top: 10px;
+    margin-right: 40px;
+    padding: 0%;
+    width: 70px;
+    height: 30px;
+}
+
+/*
+    copyright
+  */
+
+#copyright {
+    display: flex;
+    position: static;
+    background-color: #506C53;
+
+    padding: 3px;
+
+    font-style: normal;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+}
+
+#txtcoryright,
+a {
+    color: #A9E8AF;
+    text-decoration: none;
+}
+
+
+#questCadastro {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#questCadastroTermo {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnVerde {
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    width: 217px;
+    height: 51px;
+    border-radius: 48px;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 3%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-size: 20px;
+  }  
+
+  .btnVerde:hover {
+    background-color: #506C53;
+    color: white;
+    
+  }

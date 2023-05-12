@@ -524,8 +524,6 @@ Aside
   width: 238px;
   height: 35px;
 
-  font-family: 'Istok Web';
-  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 35px;
@@ -992,4 +990,27 @@ All Foooter
     #txtcoryright, a {
     color: #A9E8AF;
     text-decoration: none;
+    }
+
+    .btnVerde {
+      background-color: white;
+      color: green;
+      border: 2px solid green;
+      width: 217px;
+      height: 51px;
+      border-radius: 48px;
+      padding: 5px 10px;
+      text-align: center;
+      display: inline-block;
+      font-size: 15px;
+      margin: 3%;
+      transition-duration: 0.5s;
+      cursor: pointer;
+      font-size: 20px;
+    }  
+  
+    .btnVerde:hover {
+      background-color: #506C53;
+      color: white;
+      
     }
