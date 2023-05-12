@@ -97,7 +97,7 @@ const dragStop = () => {
 const autoPlay = () => {
     if(window.innerWidth < 800) return; // Retorne se a janela for menor que 800
     // Reproduzir automaticamente o carrossel a cada 2500ms
-    timeoutId = setTimeout(() =>carrossel.scrollLeft += larguraPrimeiraCaixa, 3000);
+    timeoutId = setTimeout(() =>carrossel.scrollLeft += larguraPrimeiraCaixa, 2000);
 
 }
 autoPlay();
@@ -127,6 +127,31 @@ document.addEventListener("mouseup", dragStop);
 carrossel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+
+/*
+    Categoria Campanhas
+*/
+
+function reveal() {
+    var reveals = document.querySelectorAll(".backgroundCategoriaCampanha");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
+
+
 
 
 
