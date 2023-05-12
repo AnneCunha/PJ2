@@ -66,10 +66,12 @@ margin: auto;
 }
 
 .row{
-display: flex;
-flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
 
-align-items: center;
+  align-items: center;
+  
+  margin: 2rem 0rem 0rem 0rem;
 
 }
 
