@@ -16,16 +16,14 @@ header
 */
 
 .header{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-style: solid;
-    border-radius: 3px;
-    background-color: #A9E8AF;
-    color: violet; 
-    margin: auto;        
-  }
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1px;
+  background-color: #A9E8AF;
+  margin: auto;        
+}
 
   body {
   margin: 0%;
@@ -120,6 +118,9 @@ header
     height: 85px;
     filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
     align-items: center;
+    justify-content: space-around;
+
+    margin: 2rem 0rem 0rem 0rem;
   }
   
   .button {
