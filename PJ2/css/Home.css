@@ -466,15 +466,15 @@ body {
 .imagemTituloEscolherCampanha {
   background-color: #f8f8f8;
   border-radius: 1rem;
-  border: none;
-  transition: 0.1s;
+  border: 0.125rem solid #f8f8f8;
+  transition: border-color .3s ease-in-out;
   cursor: pointer;
   width: 16.625rem;
   height: 23.3125rem;
 }
 
 .imagemTituloEscolherCampanha:hover {
-  border: solid 3px #91CB96;
+  border: solid 2px #02a95c;
 }
 
 
