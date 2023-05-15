@@ -1,10 +1,7 @@
-* {
-  font-family: 'Anuphan', sans-serif;
-}
-
 body {
   margin: 0%;
   padding: 0%;
+  font-family: 'Anuphan', sans-serif;
 }
 
 .header {
@@ -73,7 +70,7 @@ body {
     color: green;
     border: 2px solid green;
     width: 220px;
-    height: 37px;
+    height: 100px;
     border-radius: 20px;
     text-align: center;
     display: inline-block;
@@ -464,7 +461,7 @@ body {
 }
   
 .imagemTituloEscolherCampanha {
-  background-color: white;
+  background-color: #f8f8f8;
   border-radius: 1rem;
   border: 0.125rem solid white;
   transition: border-color .3s ease-in-out;

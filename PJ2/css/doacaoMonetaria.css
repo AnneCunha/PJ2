@@ -1,13 +1,9 @@
-* {
-    font-family: 'Anuphan', sans-serif;
-}
-
-
-body{
+body {
   margin: 0%;
   background: fixed;
   
   background-image: url(https://trello.com/1/cards/6446d0d3f429609ff9e3aea5/attachments/6446d1489431ff7a1efc7b47/previews/6446d14a9431ff7a1efc7b58/download/BackgroundPJ2_1.png);
+  font-family: 'Anuphan', sans-serif;
 }
 
 
@@ -150,100 +146,78 @@ margin: auto;
     text-decoration: none;
   }
 
-  /* botão de Login */
+/*
+  Logo e Perfil do Usuario
+*/
 
-/* Button used to open the contact form - fixed at the bottom of the page */
-* {box-sizing: border-box;}
-.open-button {
-background-color: #b063ff;
-color: white;
-padding: 13px 5px;
-border: none;
-cursor: pointer;
-opacity: 0.8;
-position: relative;
-bottom: 4px;
-right: -528px;
-width: 160px;
-height: 41px;
-border-radius: 50px;
-
-}
-
-/* The popup form - hidden by default */
-
-.PopUpLogin {
+.logoPerfil {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-end;
+
+  width: 1100px;
+
+  margin-bottom: 17px;
 }
 
-.form-popup {
-display: none;
-position: fixed;
-bottom: 0;
-right: 15px;
-border: 3px solid #f1f1f1;
-z-index: 9;
-}
+  #logo{
+    position: relative;
+    height: 70px; 
+    width: 70px;
+    border: solid 1px #506C53;
+    border-radius: 10px;
+  }
 
-/* Add styles to the form container */
-.form-container {
-max-width: 300px;
-padding: 10px;
-background-color: #a9e8af;
-border-style: solid;
-border-color: seagreen;
-bottom: 792px;
-right: 12px;
-}
+  .nomeSairPerfil {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
 
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-width: 100%;
-padding: 15px;
-margin: 5px 0 22px 0;
-border: none;
-background: #f1f1f1;
-}
+  #nomePerfil {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
 
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-background-color: #ddd;
-outline: none;
-}
+  color: rgba(0, 0, 0, 0.51);
 
-/* Set a style for the submit/login button */
-.form-container .btn {
-background-color: #04AA6D;
-color: white;
-padding: 16px -10px;
-border: none;
-cursor: pointer;
-width: 90%;
-margin-bottom: 10px;
-opacity: 0.8;
-}
+  margin: 0%;
+  padding: 0%;
+  }
 
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-background-color: red;
-}
+  #buttonSair {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
 
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-opacity: 1;
-}
-.feedback textarea {
-width: 650px;
-  height: 200px;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 46px;
-  resize: none;
-  border-radius: 10px;
-  border: 3px solid #506d53;
-}
+  color: rgba(0, 0, 0, 0.51);
+
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+
+  padding: 0%;
+  margin: 0%;
+  }
+
+  #separadorTexto {
+    margin: 0px 10px 0px 10px;
+    padding: 0%;
+
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    user-select: none;
+
+    color: rgba(0, 0, 0, 0.51);
+  }
+
+  #imgPerfilUsuario {
+    padding: 0%;
+    margin: 0rem 0rem 0rem 1rem;
+  }
 
 /*
   Corpo

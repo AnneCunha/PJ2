@@ -30,39 +30,18 @@
         </nav>
 
             
-            <div class="PopUpLogin">
-                <!-- Logo do Site -->
-                <a href="#" id="linkImgLogo">
-                    <img src="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png" height="70px" width="70px" id="logo">
-                </a>
-                <button class="open-button" onclick="openForm()">Fazer Login</button>
-                
-                    <!-- The form -->
-                    <div class="form-popup" id="myForm">
-                        <form action="/action_page.php" class="form-container">
-                            <h1>Login</h1>
+        <div class="logoPerfil">
+            <img src="img/Logo/Logo.png" id="logo">
 
-                            <label for="email"><b>Email</b></label>
-                            <input type="text" placeholder="Email" name="email" required>
 
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Senha" name="psw" required>
 
-                            <button type="submit" class="btn">Login</button>
-                            <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
-                        </form>
-                    </div>  
-                    <script>
-                        function openForm() {
-                        document.getElementById("myForm").style.display = "block";
-                        }
-                        
-                        function closeForm() {
-                        document.getElementById("myForm").style.display = "none";
-                        }
-                    </script>
-            </div>    
-    </div>
+            <div class="nomeSairPerfil">
+                <h3 id="nomePerfil">Nome Do Usuario</h3>
+                <p id="separadorTexto">|</p>
+                <button id="buttonSair" onclick="location.href='Home.html'">Sair</button>
+                <img id="imgPerfilUsuario" src="img/Foto Perfil/Perfil.png" alt="Foto de Perfil do usuario">
+            </div>
+        </div>
     </div>
 
 
@@ -106,9 +85,11 @@
         <div class="feedback">
             <p>Feedback:</p>
             <textarea id="FeedbackTexto" name="FeedbackTexto"></textarea>
-            <a href="cadastro.html">
-                <button type="submit" class="btn">Home</button>
-            </a>
+            <button id="buttonEnviarFeedback">Enviar</button>
+        </div>
+
+        <div class="buttonHome">
+            <button type="submit" id="buttonHome" onclick="location.href='Home.html'">Home</button>
         </div>
         
 
