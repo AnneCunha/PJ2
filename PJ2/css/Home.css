@@ -10,7 +10,7 @@ body {
     justify-content: space-between;
     flex-direction: column;
 
-    background-image: url("https://trello.com/1/cards/6446d0d3f429609ff9e3aea5/attachments/6453ff836aeccd126b11af2d/previews/6453ff836aeccd126b11af3a/download/Green_Illustrated.png");
+    background-image: url("/img/BackgroundHeader/Green\ Illustrated.png");
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -85,6 +85,29 @@ body {
     background-color: #506C53;
     color: white;
   }
+
+
+  .btnHaeder {
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    width: 220px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 3%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    padding: 0%;
+  }
+  
+  .btnHaeder:hover {
+    background-color: #506C53;
+    color: white;
+  }
+
 
 
 /*
