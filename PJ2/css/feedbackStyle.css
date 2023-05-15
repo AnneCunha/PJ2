@@ -12,7 +12,7 @@ body{
 margin: 0%;
 background: fixed;
 font-family: 'Anuphan', sans-serif;
-background-image: url(https://trello.com/1/cards/6446d0d3f429609ff9e3aea5/attachments/6446d153f25f391c8ead5160/previews/6446d155f25f391c8ead53d9/download/BackgroundPJ2_2.png);
+background-image: url(/img/BackgroundPagina/BackgroundFeedback.png);
 }
 
 .logo-barra{
@@ -365,7 +365,7 @@ margin: 30px;
 
 
 .feedback p {
-padding-right: 510px;
+  padding-right: 580px;
   font-size: 25px;
   margin: 10px;
 }
@@ -375,6 +375,11 @@ padding-right: 510px;
   width: 600px;
   height: 170px;
 
+  resize: none;
+
+  outline: none;
+  border: solid 2px #4F8865;
+  border-radius: 5px;
   font-size: 25px;
 }
 
