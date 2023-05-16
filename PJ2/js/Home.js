@@ -166,3 +166,8 @@ perguntas.forEach((perguntas) => {
         perguntas.classList.toggle("active");
     });
 });
+
+$( ".perguntasFrequentes" ).on( "click", function() {
+    $( this ).children ( '.resposta').toggle ("slow");
+    // $( '.resposta' ).toggle( "slow" );    
+  });
