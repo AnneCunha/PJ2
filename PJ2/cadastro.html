@@ -53,7 +53,15 @@
                     <p>Nome</p>
                     <input type="text" id="nome"autocomplete="off" class="cadastro-nome">
                 </div>
-                <button type="submit" class="botao img"><img src="https://www.clker.com/cliparts/Z/J/g/U/V/b/avatar-male-silhouette-md.png">Adicionar Imagem</button>
+                <input type="file" id="imageUsuario" name="Adicionar Foto de Perfil" accept="image/*" style="display: none;">
+               <label for="imageUsuario" id="labelCadastroFoto">
+                    <figure class="caixaFotodePerfil">
+                        <img src="img/fotoUsuario/foto_usuario.png" class="fotoUsuarioCadastro">
+                        <figcaption>
+                            Adicionar Foto de Perfil
+                        </figcaption>
+                    </figure>
+                </label>
             </nav>
 
             <nav class="cadastro">
@@ -61,16 +69,16 @@
                     <p>Nome de usuário</p>
                 <input type="text" id="input-box" autocomplete="off" class="cadastro-usuario">
                 </div>
-                <div class="tctNameCdastro">
+                <div class="txtNameCdastro">
                 <p>CPF</p>
-                <input type="text" id="input-box" placeholder="000.000.000-00" autocomplete="off" class="cadastro-cpf">
+                <input type="number" id="input-box" placeholder="000.000.000-00" autocomplete="off" class="cadastro-cpf">
                 </div>
             </nav>
 
             <nav class="cadastro">
                 <div class="txtNameCadastro">
                 <p>Data de Nascimento</p> 
-                <input type="text" id="input-box" placeholder="dd/mm/aaaa" autocomplete="off" class="cadastro-nascimento">
+                <input type="number" id="input-box" placeholder="dd/mm/aaaa" autocomplete="off" class="cadastro-nascimento">
                 </div>
                 <div class="txtNameCadastro">
                 <p>Sexo</p>
@@ -81,16 +89,16 @@
                 </div>
                 <div class="txtNameCadastro">
                 <p>Telefone</p>
-                <input type="text" id="input-box" placeholder="( 00 ) 00000 - 0000" autocomplete="off" class="cadastro-telefone">
+                <input type="number" id="input-box" placeholder="( 00 ) 00000 - 0000" autocomplete="off" class="cadastro-telefone">
                 </div>
             </nav>
                 
             <nav class="cadastro">
                 <div class="txtNameCadastro">
-                <p>Email</p><input type="text" id="input-box" autocomplete="off" class="cadastro-email">
+                <p>Email</p><input type="email" id="input-box" autocomplete="off" class="cadastro-email">
                 </div>
                 <div class="txtNameCdastro">
-                <p>Senha</p><input type="text" id="input-box" placeholder="••••••••••••••••••" autocomplete="off" class="cadastro-senha">
+                <p>Senha</p><input type="password" id="input-box" placeholder="••••••••••••••••••" autocomplete="off" class="cadastro-senha">
                 </div>
             </nav>
             
@@ -105,7 +113,7 @@
                     </div>
                     
                     <div id="questCadastroTermos">
-                        <h3>Concorda com nossos termos?</h3>
+                        <h3>Concorda com nossos Termos?</h3>
                         <div class="coluna">
                             <input type="checkbox" id="check-box" class="check-box"><p id="termosCadastro">Concordo com os termos</p>
                         </div>
@@ -124,7 +132,7 @@
                 <!-- Email / Assinar-->
 
                 <div class="textoAssinar">
-                    <h3 id="txth3">Fique conectado</h3>
+                    <h3 id="txth3">Fique Conectado</h3>
                     <p id="txtp">Receba atualizações e novas<br>notificações sobre nosso projeto.</p>
 
                     

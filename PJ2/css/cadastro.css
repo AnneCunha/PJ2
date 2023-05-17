@@ -200,6 +200,7 @@ body{
   border-color: #4CAF50;
   font-size: 20px;
   color: #000000;
+  padding: 3px;
 }
 
 .cadastro select {
@@ -221,11 +222,45 @@ body{
   width: 210px;
 }
 
+.fotoUsuarioCadastro {
+  width: 80%;
+  border: solid 2px #4CAF50;
+}
+
+#labelCadastroFoto {
+  display: flex;
+  justify-content: center;
+}
+
+#imageUsuario {
+  width: 200px;
+}
+
+.caixaFotodePerfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0%;
+  padding: 15px 7px 0px 7px;
+  border-radius: 10px;
+}
+
+.caixaFotodePerfil figcaption {
+  background-color: white;
+  margin: 10px 0px 4px 0px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 .coluna{
   float: left;
   align-items: center;
   display: flex;
 }
+
 .alinhar h3{
   font-size: 20px;
   
@@ -234,28 +269,38 @@ body{
   display: flex;
   justify-content: space-between;
   padding: 1%;
-  margin-top: 30p;
+  margin-top: 30px;
 }
+
 .cadastro-nome{
+  outline: none;
   width: 742px;
+  height: 30px;
 }
 .cadastro-usuario{
+  outline: none;
   width: 748px;
+  height: 30px;
 }
 .cadastro-cpf{
+  outline: none;
   width: 230px;
-
+  height: 30px;
 }
 .cadastro-nascimento{
+  outline: none;
   width: 380px;
-
+  height: 30px;
 }
 .cadastro-telefone{
+  outline: none;
   width: 380px;
+  height: 30px;
 }
 .cadastro-email{
+  outline: none;
   width: 480px;
-  
+  height: 30px;
 }
 input[type=text] {
   height: 30px;
@@ -274,9 +319,23 @@ input[type=text] {
   border-color: #B063FF;
 }
 
+#genero {
+  border: solid 2px #4CAF50;
+  height: 41px;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 #termosCadastro {
   width: 456px;
 }
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+ }
+
+
 
 /*
   Footer
