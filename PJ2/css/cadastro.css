@@ -485,6 +485,28 @@ input[type=text] {
   color: #B063FF;
 }
 
+#txtLogoName03 {
+  margin: 0px 0px 0px 0px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #506C53;
+}
+
+#txtLogoName04 {
+  margin: 0px 0px 0px 0px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #506C53;
+}
+
 
 /*
   Apoiadores
