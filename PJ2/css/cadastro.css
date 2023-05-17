@@ -2,7 +2,7 @@ body{
   margin: 0%;
   background: fixed;
   font-family: 'Anuphan', sans-serif;
-  background-image: url(/img/BackgroundPagina/BackgroundCadastro.png);
+  background-image: url(../img/BackgroundPagina/BackgroundCadastro.png);
   background-repeat: no-repeat;
   background-size: cover  ;
 }

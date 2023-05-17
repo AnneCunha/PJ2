@@ -12,7 +12,7 @@ body{
 margin: 0%;
 background: fixed;
 font-family: 'Anuphan', sans-serif;
-background-image: url(/img/BackgroundPagina/BackgroundFeedback.png);
+background-image: url(../img/BackgroundPagina/BackgroundFeedback.png);
 }
 
 .logo-barra{
