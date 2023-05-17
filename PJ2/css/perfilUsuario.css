@@ -469,6 +469,7 @@ caixa overflow
     background: #FFFEFE;
     border: 1px solid #4F8865;
     border-radius: 4px;
+    font-size: 19px;
 
     width: 290px;
     height: 40px;
@@ -487,6 +488,7 @@ caixa overflow
     filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.25));
     border-radius: 4px;
     color: white;
+    
 
     cursor: pointer;
     transition-duration: 0.5s;

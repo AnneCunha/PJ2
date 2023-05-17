@@ -171,6 +171,9 @@ header
       display: flex;
       flex-direction: row;
       align-items: flex-end;
+
+      margin: 0%;
+      padding: 0%;
     }
   
     #nomePerfil {
@@ -182,6 +185,7 @@ header
   
     margin: 0%;
     padding: 0%;
+    cursor: pointer;
     }
   
     #buttonSair {
@@ -217,6 +221,8 @@ header
     #imgPerfilUsuario {
       padding: 0%;
       margin: 0rem 0rem 0rem 1rem;
+
+      cursor: pointer;
     }
 
 /* 
