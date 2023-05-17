@@ -290,10 +290,11 @@
   }
   
   #linhaDoacao {
-      border-right: solid gray 11px;
-      border-radius: 30px;
-      margin-top: 30px;
-  }
+    border-right: solid gray 11px;
+    border-radius: 30px;
+    margin-top: -9px;
+    margin-bottom: -9px;
+}
   
   .campanhasDoacao {
       box-sizing: border-box;
@@ -378,28 +379,25 @@
   border-radius: 10px;
 }
   
-  .adicionarItem {
-    background-color: white;
-    color: black;
-    border: 3px solid #465847;
-    border-radius: 30px;
-    text-align: center;
-    display: inline-block;
-    font-size: 19px;
-    margin: 3%;
-    transition-duration: 0.5s;
-    cursor: pointer;
-    font-family: 'Anuphan', sans-serif;
-    min-height: 50px;
-    width: 200px;
-  }
-  
-  .btnItemDoacao {
-    display: flex;
-    justify-content: center;
-  
-    margin-top: 25px;
-  }
+.adicionarItem {
+  background-color: white;
+  color: black;
+  border: 3px solid #465847;
+  border-radius: 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 19px;
+  margin: 3%;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  min-height: 50px;
+  width: 200px;
+}
+
+.btnItemDoacao {
+  display: flex;
+  justify-content: center;
+}
   
   #colunasFotos2 {
     margin-left: 30px;
@@ -594,24 +592,35 @@
     justify-content: center;
     margin-top: 40px;
   }
-  
-  #itemDoado {
-      background-color: white;
-      color: black;
-      border: 3px solid #465847;
-      border-radius: 30px;
-      text-align: center;
-      display: inline-block;
-      font-size: 19px;
-      margin: 3%;
-      transition-duration: 0.5s;
-      cursor: pointer;
-      font-family: 'Anuphan', sans-serif;
-      width: 255.52px;
-      height: 64.91px;
+
+  .mainButton {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 25px;
   }
   
-  .adicionarItem:houver {
+  .btnDoar {
+    background-color: white;
+    color: #506C53;
+    border: 3px solid #465847;
+    
+    border-radius: 30px;
+    width: 300px;
+    height: 55px;
+  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 32px;
+    margin: 3%; 
+    transition-duration: 0.5s;
+    cursor: pointer;
+    
+  }
+  
+  .btnDoar:hover {
+  
     background-color: #273528;
     color: white;
   }
@@ -814,6 +823,28 @@
       
       color: #B063FF;
       }
+
+      #txtLogoName03 {
+        margin: 0px 0px 0px 0px;
+      
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+      
+        color: #506C53;
+      }
+      
+      #txtLogoName04 {
+        margin: 0px 0px 0px 0px;
+      
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+      
+        color: #506C53;
+      }
       
       
       /*
@@ -940,4 +971,28 @@
 
 *::-webkit-scrollbar-thumb:active {
   background-color: #62A34B;
+}
+
+
+.btnVerde {
+  background-color: white;
+  color: green;
+  border: 2px solid green;
+  width: 217px;
+  height: 51px;
+  border-radius: 48px;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 3%;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  font-size: 20px;
+}  
+
+.btnVerde:hover {
+  background-color: #506C53;
+  color: white;
+  
 }
