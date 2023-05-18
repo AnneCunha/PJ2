@@ -11,7 +11,7 @@ body {
   flex-direction: column;
 
   background-image: url(../img/BackgroundHeader/GreenIllustrated.png);
-  height: 400px;
+  height: 600px;
   background-size: cover;
   background-position: center;
 }
@@ -35,7 +35,7 @@ body {
   text-align: center;
   padding: 5px;
   user-select: none;
-  margin-top: 1%;
+  margin-top: 5rem;
 }
 
 .search-box {
@@ -78,8 +78,8 @@ body {
   text-align: center;
   display: inline-block;
   font-size: 25px;
-  margin: 3rem;
-  margin-top: 2%;
+  margin-bottom: 11rem;
+  margin-top: 3rem;
   transition-duration: 0.5s;
   cursor: pointer;
   padding: 0%;
@@ -1010,7 +1010,7 @@ a {
 
 .show-botaoLogin, .container{
   display: block;
-  margin-right: -500px;
+  margin-right: -730px;
   transform: translate(-50%, -50%);
 }
 input[type="checkbox"]{
