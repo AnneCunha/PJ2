@@ -79,21 +79,11 @@
                     <!-- Icon de Serviço -->
                     <div class="iconServico">
                         <nav>
-                            <a href="#" class="linkServico">
                                 <img id="iconServico01" src="img/Icon Doação Monetaria/Banco do Brasil.png" alt="Banco do Brasil">
-                            </a>
-                            <a href="#" class="linkServico">
                                 <img id="iconServico02" src="img/Icon Doação Monetaria/Visa.png" alt="Visa">
-                            </a>
-                            <a href="#" class="linkServico">
                                 <img id="iconServico03" src="img/Icon Doação Monetaria/Elo.png" alt="Elo">
-                            </a>
-                            <a href="#" class="linkServico">
                                 <img id="iconServico04" src="img/Icon Doação Monetaria/Maestro.png" alt="Maestro">
-                            </a>
-                            <a href="#" class="linkServico">
                                 <img id="iconServico05" src="img/Icon Doação Monetaria/MasterCard.png" alt="MasterCard">
-                            </a>
                         </nav>
                     </div>
                 </div>
@@ -123,13 +113,13 @@
 
                 <form action="Número do cartão / Valido até / CVV" class="superiorNumeroValidoCvv">
                     
-                    <input type="number" name="numeroCartao" id="numeroCartao" placeholder="XXXX XXXX XXXX XXXX" pattern="[\d]{4} [\d]{4} [\d]{4} [\d]{4}" onKeyPress="if(this.value.length==16) return false;">
+                    <input type="text" name="numeroCartao" id="numeroCartao" placeholder="XXXX XXXX XXXX XXXX" onKeyPress="if(this.value.length==19) return false;">
 
                     
-                    <input type="text" name="Valido" id="dateValido" placeholder="00/00" onKeyPress="if(this.value.length==7) return false;">
+                    <input type="number" name="Valido" id="dateValido" placeholder="00/00" onKeyPress="if(this.value.length==7) return false;">
 
                     
-                    <input type="number" id="cvv" placeholder="000" onKeyPress="if(this.value.length==3) return false;">
+                    <input type="text" id="cvv" placeholder="000" onKeyPress="if(this.value.length==3) return false;">
                 </form>
             </div>
 

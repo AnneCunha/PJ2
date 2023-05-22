@@ -363,7 +363,6 @@ corpo
   border-radius: 10px;
   font-size: 32px;
   outline: none;
-  cursor: pointer;
   padding-left: 25px;
 }
 
@@ -456,6 +455,7 @@ corpo
 background: #FFFEFE;
 border: 3px solid #506C53;
 border-radius: 10px;
+outline: none;
 }
 
 .adicionarItem {
@@ -651,6 +651,8 @@ Aside
   border-radius: 10px;
 
   color: #506C53;
+
+  cursor: pointer;
 }
 
 #dataEntrega {
@@ -665,6 +667,8 @@ Aside
   border-radius: 10px;
 
   color: #506C53;
+
+  cursor: pointer;
 }
 
 #btnDoar {
@@ -706,13 +710,13 @@ Aside
   border: 3px solid #465847;
   
   border-radius: 30px;
-  width: 300px;
-  height: 55px;
+  width: 250px;
+  height: 51px;
 
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 32px;
+  font-size: 27px;
   margin: 3%; 
   transition-duration: 0.5s;
   cursor: pointer;
@@ -1038,7 +1042,7 @@ All Foooter
     .btnVerde {
       background-color: white;
       color: green;
-      border: 2px solid green;
+      border: 2px solid  #465847;
       width: 217px;
       height: 51px;
       border-radius: 48px;
