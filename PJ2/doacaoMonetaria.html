@@ -113,10 +113,10 @@
 
                 <form action="Número do cartão / Valido até / CVV" class="superiorNumeroValidoCvv">
                     
-                    <input type="text" name="numeroCartao" id="numeroCartao" placeholder="XXXX XXXX XXXX XXXX" onKeyPress="if(this.value.length==19) return false;">
+                    <input type="text" name="numeroCartao" id="numeroCartao" placeholder="XXXX XXXX XXXX XXXX" onKeyPress="if(this.value.length==19) return false;" oninput="formatarNumero(this)">
 
                     
-                    <input type="number" name="Valido" id="dateValido" placeholder="00/00" onKeyPress="if(this.value.length==7) return false;">
+                    <input type="number" name="Valido" id="dateValido" placeholder="00/00" onKeyPress="if(this.value.length==7) return false;" oninput="formatarData(this)">
 
                     
                     <input type="text" id="cvv" placeholder="000" onKeyPress="if(this.value.length==3) return false;">
