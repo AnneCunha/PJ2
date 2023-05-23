@@ -515,6 +515,8 @@
     font-size: 32px;
   
     color: #506C53;
+
+    outline: none;
   }
   
   #cidade {
@@ -529,6 +531,8 @@
     font-size: 32px;
   
     color: #506C53;
+
+    outline: none;
   }
   
   #cep {
