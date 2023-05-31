@@ -68,7 +68,14 @@ body {
   border-radius: 50px;
 }
 
-.btn {
+.botoes {
+  margin-top: 3rem;
+ margin-bottom: 5rem; 
+}
+
+
+
+.btnDoar {
   background-color: white;
   color: green;
   border: 2px solid green;
@@ -78,14 +85,34 @@ body {
   text-align: center;
   display: inline-block;
   font-size: 25px;
-  margin-bottom: 7rem;
-  margin-top: 3rem;
   transition-duration: 0.5s;
   cursor: pointer;
   padding: 0%;
+  margin-right: 3rem;
 }
 
-.btn:hover {
+.btnDoar:hover {
+  background-color: #506C53;
+  color: white;
+}
+
+.btnRequisitar {
+  background-color: white;
+  color: green;
+  border: 2px solid green;
+  width: 220px;
+  height: 35px;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  padding: 0%;
+  margin-left: 3rem;
+}
+
+.btnRequisitar:hover {
   background-color: #506C53;
   color: white;
 }
@@ -997,7 +1024,7 @@ a {
 /* botão de Login */
 .show-botaoLogin{
   background: #4f8865;
-  padding: 10px 20px;
+  padding: 10px 40px;
   font-size: 20px;
   font-weight: 500;
   color: #fffefe;
