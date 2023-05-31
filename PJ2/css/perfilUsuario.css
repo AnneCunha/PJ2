@@ -33,8 +33,8 @@ body {
     border-radius: 10px;
 
     cursor: pointer;
-    height: 70px; 
-    width: 70px;
+    height: 80px; 
+    width: 80px;
 }
 
 .search-box {
@@ -171,11 +171,16 @@ body {
     width: 300px;
 
     border: solid black 2px;
+    cursor: pointer;
 }
 
 #fotoUsuario>label>img {
     width: 100%;
     height: 100%;
+}
+
+#imgFotoUsuario {
+    cursor: pointer;
 }
 
 #dados {
@@ -568,6 +573,7 @@ a {
     width: 70px;
     height: 70px;
 
+    user-select: none;
 }
 
 #txtLogoName01 {
@@ -580,6 +586,7 @@ a {
     text-align: center;
 
     color: #B063FF;
+    user-select: none;
 }
 
 #txtLogoName02 {
@@ -703,7 +710,7 @@ a {
     justify-content: center;
     align-items: center;
     justify-items: center;
-
+    user-select: none;
 }
 
 #txtcoryright,
