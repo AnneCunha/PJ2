@@ -425,9 +425,10 @@
   }
   
   #itensAdicionados > h3 {
+    font-size: 1.3em;
     margin: 0px;
     padding-left: 10px;
-    
+    color: #506C53;
   }
   
   #textBoxDoados {
