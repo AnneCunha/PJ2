@@ -78,7 +78,7 @@
             <nav class="cadastro">
                 <div class="txtNameCadastro">
                 <p>Data de Nascimento</p> 
-                <input type="number" id="input-box" placeholder="dd/mm/aaaa" autocomplete="off" class="cadastro-nascimento">
+                <input type="date" id="input-box" placeholder="dd/mm/aaaa" autocomplete="off" class="cadastro-nascimento" oninput="formatarData(this)">
                 </div>
                 <div class="txtNameCadastro">
                 <p>Sexo</p>
@@ -217,5 +217,7 @@
     <div id="copyright">
         <a href="#"><p id="txtcoryright">copyright © 2023<br>Todos os direitos reservados</p></a>
     </div>        
+
+    <script src="js/cadastro.js"></script>
 </body>
 </html>
