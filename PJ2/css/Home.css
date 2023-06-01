@@ -70,7 +70,9 @@ body {
 
 .botoes {
   margin-top: 3rem;
- margin-bottom: 5rem; 
+ margin-bottom: 5rem;
+
+ user-select: none;
 }
 
 
@@ -357,6 +359,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  user-select: none;
 }
 
 .tituloPerguntasFrequentes {
@@ -446,6 +450,7 @@ body {
   justify-content: center;
 
   margin-top: 100px;
+  user-select: none;
 }
 
 .textoTituloEscolherCampanha {
@@ -528,7 +533,7 @@ body {
 
   max-width: 1320px;
   margin: auto;
-
+  user-select: none;
 }
 
 .imgQuemSomos img {
@@ -537,7 +542,6 @@ body {
   height: 380px;
 
   object-fit: cover;
-  user-select: none;
 }
 
 .allTextoQuemSomos {
@@ -551,7 +555,6 @@ body {
 .allTextoQuemSomos h1 {
   font-size: 3rem;
   color: #18315A;
-  user-select: none;
 }
 
 .textoQuemSomos p {
@@ -572,6 +575,7 @@ body {
   flex-direction: column;
 
   margin: 5rem 0rem 0rem 0rem;
+  user-select: none;
 }
 
 .allTituloNomeEmail {
