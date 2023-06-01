@@ -360,13 +360,12 @@ color: #FFC978;
 /* caixa de feedback*/
 
 .feedback {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
 
 }
-
 
 .feedback p {
   padding-right: 480px;
@@ -374,7 +373,13 @@ margin: 30px;
   margin: 10px;
 }
 
-#FeedbackTexto  {
+.wrapperFeedback {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#feedbackTexto  {
   font-family: 'Anuphan', sans-serif;
   width: 600px;
   height: 170px;
@@ -405,9 +410,8 @@ margin: 30px;
   height: 30px;
 }
 
-#buttonEnviarFeedback:hover{
-
-  background-color: #273528;
+#buttonEnviarFeedback:hover {
+  background-color: #465847;
   color: white;
 }
 
