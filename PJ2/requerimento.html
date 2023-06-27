@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajuda Sem Fronteiras</title>
 
-    <link rel="icon" type="image/png"
-        href="img/Logo/Logo.png" />
+    <link rel="icon" type="image/png" href="img/Logo/Logo.png" />
 
     <link rel="stylesheet" href="css/requerimento.css">
 </head>
@@ -19,18 +18,18 @@
     <div class="header">
         <div class="logo-barra">
 
-                <div class="search-box">
-                    <div class="row">
-                        <input type="text" id="input-box" autocomplete="off">
-                        <button type="submit"><img src="img/Lupa/LupaRoxa.png"></button>
-                    </div>
+            <div class="search-box">
+                <div class="row">
+                    <input type="text" id="input-box" autocomplete="off">
+                    <button type="submit"><img src="img/Lupa/LupaRoxa.png"></button>
                 </div>
+            </div>
         </div>
 
         <nav class="header-botoes">
-                <button type="submit" class="btn" onclick="location.href='Home.html'">Home</button>
-                <button type="submit" class="btn" onclick="location.href='doacao.html'">Doar</button>
-                <button type="submit" class="btn" onclick="location.href='doacaoMonetaria.html'">Ajuda Monetária</button>
+            <button type="submit" class="btn" onclick="location.href='Home.html'">Home</button>
+            <button type="submit" class="btn" onclick="location.href='doacao.html'">Doar</button>
+            <button type="submit" class="btn" onclick="location.href='doacaoMonetaria.html'">Ajuda Monetária</button>
         </nav>
 
         <div class="logoPerfil">
@@ -61,67 +60,69 @@
 
             <div id="corpoRequerimento">
 
-            <div class="formDoacao">
-                <label for="select_campanhasDoacao" id="labelFormDoacao">Qual a categoria do produto</label>
-                <form action="categoriasDoacao">
-                    <select class="campanhasDoacao">
-                        <option value="0">Produtos de higiene</option>
-                        <option value="1">Produtos de Limpeza</option>
-                        <option value="2">Medicamentos</option>
-                        <option value="3">Roupas</option>
-                        <option value="4">Alimentos</option>
-                        <option value="5">Ração/medicamentos para pets</option>
-                    </select>
-                </form>
-            </div>
+                <div class="formDoacao">
+                    <label for="select_campanhasDoacao" id="labelFormDoacao">Qual a categoria do produto</label>
+                    <form action="categoriasDoacao">
+                        <select id="campanhasDoacao">
+                            <option value="0">Produtos de higiene</option>
+                            <option value="1">Produtos de Limpeza</option>
+                            <option value="2">Medicamentos</option>
+                            <option value="3">Roupas</option>
+                            <option value="4">Alimentos</option>
+                            <option value="5">Ração/medicamentos para pets</option>
+                        </select>
+                    </form>
+                </div>
 
 
-            <!-- input da quantidade da doação-->
+                <!-- input da quantidade da doação-->
 
-            <div class="formDoacao">
-                <label for="DoacaoQuant" id="labelDoacaoQuat">Qual a quantidade?</label>
-                <form action="quantDoacao">
-                    <input type="number" placeholder="0" id="inputQuantDoacao">
-                </form>
-            </div>
+                <div class="formDoacao">
+                    <label for="DoacaoQuant" id="labelDoacaoQuat">Qual a quantidade?</label>
+                    <form action="quantDoacao">
+                        <input type="number" placeholder="0" id="inputQuantDoacao">
+                    </form>
+                </div>
 
-            <div id="textAreaDoacao">
-                <label for="" style="font-size: 1.5em; color: rgba(0, 0, 0, 0.5); padding-left: 20px;"> Descrição do item:</label>
-                <textarea name="descricaoItens" id="descricaoItens" style="width: 500px; height: 250px; resize: none; font-size: 1.3em;" ></textarea>
-            </div>
+                <div id="textAreaDoacao">
+                    <label for="" style="font-size: 1.5em; color: rgba(0, 0, 0, 0.5); padding-left: 20px;"> Descrição do
+                        item:</label>
+                    <textarea name="descricaoItens" id="descricaoItens"
+                        style="width: 500px; height: 250px; resize: none; font-size: 1.3em;"></textarea>
+                </div>
 
             </div>
 
             <!-- botao de adicionar item-->
             <div id="divBtnRequerimento">
-             
-                    <div class="btnItemDoacao">
-                    <button type="submit" class="btnVerde">Adicionar Item</button>
-                    </div>
+
+                <div class="btnItemDoacao">
+                    <button type="submit" class="btnVerde" onclick="addItens()">Adicionar Item</button>
+                </div>
             </div>
 
-            
+
 
         </main>
 
-        
+
         <!--linha que separar main do aside-->
 
-        
+
         <hr id="linhaDoacao">
 
 
         <!-- aside-->
 
         <aside id="asideDoacao">
-                <div id="itensAdicionados">
+            <div id="itensAdicionados">
 
-                    <h3 id="textBoxDoados">Itens Adicionados</h3>
+                <h3 id="textBoxDoados">Itens Adicionados</h3>
 
-                    <div id="caixaAdicionados">
-                        <div class="caixaDoado">
+                <div id="caixaAdicionados">
+                    <div class="caixaDoado">
 
-                            <!-- <div class="divTextDoados">
+                        <!-- <div class="divTextDoados">
                             <p class="textItensDoados">Produtos de higiene</p>
                             </div>
 
@@ -212,63 +213,65 @@
                                 <p class="textItensDoados">49</p>
                             </div> -->
 
-                        </div>
+                    </div>
 
-                        
+
                 </div>
 
                 <div id="formDoacao">
 
                     <div class="inputEntrega">
 
-                    <label for="endereco" style="font-size: 1.3em; color: #506C53;">Endereço de entrega</label>
-                    <INput type="text" id="enderecoIntrega"></INput>
+                        <label for="endereco" style="font-size: 1.3em; color: #506C53;">Endereço de entrega</label>
+                        <INput type="text" id="enderecoIntrega"></INput>
 
                     </div>
 
                     <div class="inputEntrega">
 
-                    <label for="cidade" style="font-size: 1.3em; color: #506C53;">Cidade</label>
-                    <INput type="text" id="cidade"></INput>
-    
+                        <label for="cidade" style="font-size: 1.3em; color: #506C53;">Cidade</label>
+                        <INput type="text" id="cidade"></INput>
+
                     </div>
 
                     <div class="inputEntrega">
 
                         <label for="CEP" style="font-size: 1.3em; color: #506C53;">CEP</label>
                         <INput type="text" id="cep" placeholder="00000-000"></INput>
-        
+
                     </div>
-    
+
                     <div class="inputEntrega">
 
                         <label for="telefone" style="font-size: 1.3em; color: #506C53;">Telefone</label>
                         <INput type="text" id="telefone" placeholder="( 00 ) 00000 - 0000"></INput>
-        
+
                     </div>
 
                     <div class="inputEntrega">
 
-                        <label for="cidade" style="font-size: 1.3em; color: #506C53;">Selecione a hora de entrega:</label>
+                        <label for="cidade" style="font-size: 1.3em; color: #506C53;">Selecione a hora de
+                            entrega:</label>
                         <INput type="time" id="hora" placeholder="10:00"></INput>
-        
+
                     </div>
 
                     <div class="inputEntrega">
 
                         <label for="cidade" style="font-size: 1.3em; color: #506C53;">Selecione a data</label>
                         <INput type="date" id="dataEntrega" placeholder="14 / 06 / 2023"></INput>
-        
+
                     </div>
 
 
 
                 </div>
 
-            <!-- Botão requerir-->
-            <div class="mainButton">
-                <button type="submit" class="btnDoar" onclick="location.href='feedbackRequerido.html'">Requerir</button>
-            </div>
+                <!-- Botão requerir-->
+                <div class="mainButton">
+                    <button type="submit" class="btnDoar"
+                        onclick="location.href='feedbackRequerido.html'">Requerir</button>
+                </div>
 
         </aside>
 
@@ -379,6 +382,87 @@
     </div>
 
     <!-- FIM do footer -->
+
+    <script>
+
+        // evento de adicionar item 
+        
+        let itensAdicionados = document.getElementById('caixaAdicionados');
+
+        function addItens() {
+
+                let x = document.getElementById('inputQuantDoacao');
+                let y = document.getElementById('campanhasDoacao');
+
+                console.log(x.value);
+
+                console.log(y.options[y.selectedIndex].innerText);
+
+                // cria a caixa 
+
+                let divItem = document.createElement('div');
+                divItem.className = 'caixaDoado'
+
+                itensAdicionados.append(divItem);
+
+                // cria a div da caixa que vai inserir o nome da categoria
+
+                let divTextDoado = document.createElement('div');
+                divTextDoado.className = 'divItensDoados';
+
+                divItem.append(divTextDoado);
+
+                // o p com css para o nome da categoria
+
+                pText = document.createElement('p');
+                pText.className = 'textItensDoados';
+
+                // insere o nome da categoria no p
+
+                divTextDoado.append(pText)
+                let categoria = y.options[y.selectedIndex].innerText;
+                pText.append(categoria)
+
+                // cria a div do traço 
+
+                let divTraco = document.createElement('div');
+                divTraco.className = 'divTraçoDoados';
+
+                divItem.append(divTraco);
+
+                // cria e insere a div de p para o traco e o traco no p
+
+                pTraco = document.createElement('p');
+                pTraco.className = 'textItensDoados';
+
+                divTraco.append(pTraco);
+
+                let traco = '-';
+                pTraco.append(traco);
+
+                // cria a div da quant e insere ela na div item
+
+                let divQuantDoados = document.createElement('div');
+                divQuantDoados.className = 'divQuantDoados';
+
+                divItem.append(divQuantDoados);
+
+                // cria e insere o p da div quant
+
+                pQuant = document.createElement('p');
+                pQuant.className = 'textItensDoados';
+
+                // insere a quant no p 
+
+                divQuantDoados.append(x.value);
+
+
+                // ao clicar na botao a pagina volta para o topo
+
+                window.scrollTo(300, 300);
+            };
+
+    </script>
 
 </body>
 

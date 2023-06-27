@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajuda Sem Fronteiras | Doação</title>
 
-    <link rel="icon" type="image/png"
-        href="img/Logo/Logo.png" />
+    <link rel="icon" type="image/png" href="img/Logo/Logo.png" />
 
     <link rel="stylesheet" href="css/dadosDoacao.css">
 </head>
@@ -19,19 +18,19 @@
     <div class="header">
         <div class="logo-barra">
 
-                <div class="search-box">
-                    <div class="row">
-                        <input type="text" id="input-box" autocomplete="off">
-                        <button type="submit"><img src="img/Lupa/LupaRoxa.png"></button>
-                    </div>
+            <div class="search-box">
+                <div class="row">
+                    <input type="text" id="input-box" autocomplete="off">
+                    <button type="submit"><img src="img/Lupa/LupaRoxa.png"></button>
                 </div>
+            </div>
         </div>
 
         <nav class="header-botoes">
 
-                <button type="submit" class="btn" onclick="location.href='Home.html'">Home</button>
-                <button type="submit" class="btn" onclick="location.href='requerimento.html'">Requisitar</button>
-                <button type="submit" class="btn" onclick="location.href='doacaoMonetaria.html'">Ajuda Monetária</button>
+            <button type="submit" class="btn" onclick="location.href='Home.html'">Home</button>
+            <button type="submit" class="btn" onclick="location.href='requerimento.html'">Requisitar</button>
+            <button type="submit" class="btn" onclick="location.href='doacaoMonetaria.html'">Ajuda Monetária</button>
         </nav>
 
         <div class="logoPerfil">
@@ -43,14 +42,15 @@
                 <h3 id="nomePerfil" onclick="location.href='perfilUsuario.html'">Nome do Usuario</h3>
                 <p id="separadorTexto">|</p>
                 <button id="buttonSair" onclick="location.href='Home.html'">Sair</button>
-                <img id="imgPerfilUsuario" src="img/Foto Perfil/Perfil.png" alt="Foto de Perfil do usuario" onclick="location.href='perfilUsuario.html'">
+                <img id="imgPerfilUsuario" src="img/Foto Perfil/Perfil.png" alt="Foto de Perfil do usuario"
+                    onclick="location.href='perfilUsuario.html'">
             </div>
         </div>
     </div>
 
     <!-- FIM DO HEADER-->
 
-    <!-- body --> 
+    <!-- body -->
 
     <div class="corpo">
 
@@ -63,7 +63,7 @@
             <div class="formDoacao">
                 <label for="select_campanhasDoacao" id="labelFormDoacao">Qual a categoria do produto</label>
                 <form action="categoriasDoacao">
-                    <select class="campanhasDoacao">
+                    <select name="campanhasDoacao" id="campanhasDoacao">
                         <option value="0">Produtos de higiene</option>
                         <option value="1">Produtos de Limpeza</option>
                         <option value="2">Medicamentos</option>
@@ -92,62 +92,62 @@
 
                 <div id="colunasFotos1">
 
-                        <div class="upload" id="uploadImage1">
+                    <div class="upload" id="uploadImage1">
 
-                            <input type="file" id="imageDoado1" name="file1" accept="image/*" style="display: none;">
-                            <label for="imageDoado1"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
-                             class="upload-icon"></label>
-
-                        </div>
-
-                        <div class="upload" id="uploadImage2">
-
-                            <input type="file" id="imageDoado2" name="file2" accept="image/*" style="display: none;"
-                             onclick="loadFile2(event)">
-                            <label for="imageDoado2"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
-                             class="upload-icon"></label>
-                        </div>
-
-                        <div class="upload" id="uploadImage3">
-
-                            <input type="file" id="imageDoado3" name="file3" accept="image/*" style="display: none;"
-                             onclick="loadFile3(event)">
-                            <label for="imageDoado3"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
-                             class="upload-icon"></label>
-                        </div>
+                        <input type="file" id="imageDoado1" name="file1" accept="image/*" style="display: none;">
+                        <label for="imageDoado1"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
+                                class="upload-icon"></label>
 
                     </div>
 
-                    <!-- coluna 2 -->
+                    <div class="upload" id="uploadImage2">
 
-                    <div id="colunasFotos2">
-
-                            <div class="upload" id="uploadImage4">
-                                <input type="file" id="imageDoado4" name="img" accept="image/*" style="display: none;"
-                                 onclick="loadFile4(event)">
-                                <label for="imageDoado4"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
-                                 class="upload-icon"></label>
-                            </div>
-
-                            <div class="upload" id="uploadImage5">
-                                <input type="file" id="imageDoado5" name="img" accept="image/*" style="display: none;"
-                                 onclick="loadFile5(event)">
-                                <label for="imageDoado5"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
-                                 class="upload-icon"></label>
-                            </div>
-
-                            <div class="upload" id="uploadImage6">
-                                <input type="file" id="imageDoado6" name="img" accept="image/*" style="display: none;"
-                                 onclick="loadFile6(event)">
-                                <label for="imageDoado6"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
-                                 class="upload-icon"></label>
-                            </div>
-
+                        <input type="file" id="imageDoado2" name="file2" accept="image/*" style="display: none;"
+                            onclick="loadFile2(event)">
+                        <label for="imageDoado2"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
+                                class="upload-icon"></label>
                     </div>
+
+                    <div class="upload" id="uploadImage3">
+
+                        <input type="file" id="imageDoado3" name="file3" accept="image/*" style="display: none;"
+                            onclick="loadFile3(event)">
+                        <label for="imageDoado3"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
+                                class="upload-icon"></label>
+                    </div>
+
+                </div>
+
+                <!-- coluna 2 -->
+
+                <div id="colunasFotos2">
+
+                    <div class="upload" id="uploadImage4">
+                        <input type="file" id="imageDoado4" name="img" accept="image/*" style="display: none;"
+                            onclick="loadFile4(event)">
+                        <label for="imageDoado4"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
+                                class="upload-icon"></label>
+                    </div>
+
+                    <div class="upload" id="uploadImage5">
+                        <input type="file" id="imageDoado5" name="img" accept="image/*" style="display: none;"
+                            onclick="loadFile5(event)">
+                        <label for="imageDoado5"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
+                                class="upload-icon"></label>
+                    </div>
+
+                    <div class="upload" id="uploadImage6">
+                        <input type="file" id="imageDoado6" name="img" accept="image/*" style="display: none;"
+                            onclick="loadFile6(event)">
+                        <label for="imageDoado6"><img src="img/dadosdoacao/90f0020b4ced75baed2917f85196242f.png"
+                                class="upload-icon"></label>
+                    </div>
+
+                </div>
 
             </div>
 
-            
+
             <!-- text upload image not function-->
 
             <div id="divLinkUpload" style="display: flex; justify-content: center;">
@@ -157,183 +157,92 @@
 
             <div id="textAreaDoacao">
                 <label for="" style="font-size: 1.2em; color: rgba(0, 0, 0, 0.5);"> Descrição do item:</label>
-                <textarea name="descricaoItens" id="descricaoItens" style="width: 500px; height: 250px; resize: none; font-size: 1.3em;" ></textarea>
+                <textarea name="descricaoItens" id="descricaoItens"
+                    style="width: 500px; height: 250px; resize: none; font-size: 1.3em;"></textarea>
 
                 <!-- botao de adicionar item-->
                 <div class="btnItemDoacao">
-                <button type="submit" class="btnVerde">Adicionar Item</button>
+                    <button type="submit" class="btnVerde" onclick="saveDatas()">Adicionar Item</button>
                 </div>
             </div>
 
-            
+
 
         </main>
 
-        
+
         <!--linha que separar main do aside-->
 
-        
+
         <hr id="linhaDoacao">
 
 
         <!-- aside-->
 
         <aside id="asideDoacao">
-                <div id="itensAdicionados">
+            <div id="itensAdicionados">
 
-                    <h3 id="textBoxDoados" style="font-size: 1.5em; color: #506C53;">Itens Adicionados</h3>
+                <h3 id="textBoxDoados" style="font-size: 1.5em; color: #506C53;">Itens Adicionados</h3>
 
-                    <div id="caixaAdicionados">
-                        <div class="caixaDoado">
+                <div id="caixaAdicionados">
 
-                            <div class="divTextDoados">
-                            <p class="textItensDoados">Produtos de higiene</p>
-                            </div>
 
-                            <div class="divTraçoDoados">
-                                <p class="textItensDoados">-</p>
-                            </div>
 
-                            <div class="divQuantDoados">
-                                <p class="textItensDoados">4</p>
-                            </div>
-                             
-                        </div>
-
-                        <div class="caixaDoado">
-
-                            <div class="divTextDoados">
-                                <p class="textItensDoados">Produtos de limpeza</p>
-                            </div>
-    
-                            <div class="divTraçoDoados">
-                                <p class="textItensDoados">-</p>
-                            </div>
-    
-                            <div class="divQuantDoados">
-                                <p class="textItensDoados">20</p>
-                            </div>
-                        </div>
-
-                        <div class="caixaDoado">
-
-                            <div class="divTextDoados">
-                                <p class="textItensDoados">Roupas</p>
-                            </div>
-    
-                            <div class="divTraçoDoados">
-                                <p class="textItensDoados">-</p>
-                            </div>
-    
-                            <div class="divQuantDoados">
-                                <p class="textItensDoados">34</p>
-                            </div>
-
-                        </div>
-
-                        <div class="caixaDoado">
-
-                            <div class="divTextDoados">
-                                <p class="textItensDoados">Alimentos</p>
-                            </div>
-    
-                            <div class="divTraçoDoados">
-                                <p class="textItensDoados">-</p>
-                            </div>
-    
-                            <div class="divQuantDoados">
-                                <p class="textItensDoados">14</p>
-                            </div>
-
-                        </div>
-
-                        <div class="caixaDoado">
-
-                            <div class="divTextDoados">
-                                <p class="textItensDoados">medicamentos</p>
-                            </div>
-    
-                            <div class="divTraçoDoados">
-                                <p class="textItensDoados">-</p>
-                            </div>
-    
-                            <div class="divQuantDoados">
-                                <p class="textItensDoados">22</p>
-                            </div>
-
-                        </div>
-
-                        <div class="caixaDoado">
-
-                            <div class="divTextDoados">
-                                <p class="textItensDoados">Ração/medicamentos para pets</p>
-                            </div>
-    
-                            <div class="divTraçoDoados">
-                                <p class="textItensDoados">-</p>
-                            </div>
-    
-                            <div class="divQuantDoados">
-                                <p class="textItensDoados">49</p>
-                            </div>
-
-                        </div>
-
-                        
                 </div>
 
                 <div id="formDoacao">
 
                     <div class="inputEntrega">
 
-                    <label for="endereco" style="font-size: 1.3em; color: #506C53;">Endereço de entrega</label>
-                    <INput type="text" id="enderecoIntrega"></INput>
+                        <label for="endereco" style="font-size: 1.3em; color: #506C53;">Endereço de entrega</label>
+                        <INput type="text" id="enderecoIntrega"></INput>
 
                     </div>
 
                     <div class="inputEntrega">
 
-                    <label for="cidade" style="font-size: 1.3em; color: #506C53;">Cidade</label>
-                    <INput type="text" id="cidade"></INput>
-    
+                        <label for="cidade" style="font-size: 1.3em; color: #506C53;">Cidade</label>
+                        <INput type="text" id="cidade"></INput>
+
                     </div>
 
                     <div class="inputEntrega">
 
                         <label for="CEP" style="font-size: 1.3em; color: #506C53;">CEP</label>
                         <INput type="text" id="cep" placeholder="00000-000"></INput>
-        
+
                     </div>
-    
+
                     <div class="inputEntrega">
 
                         <label for="telefone" style="font-size: 1.3em; color: #506C53;">Telefone</label>
                         <INput type="text" id="telefone" placeholder="( 00 ) 00000 - 0000"></INput>
-        
+
                     </div>
 
                     <div class="inputEntrega">
 
-                        <label for="cidade" style="font-size: 1.3em; color: #506C53;">Selecione a hora de entrega:</label>
+                        <label for="cidade" style="font-size: 1.3em; color: #506C53;">Selecione a hora de
+                            entrega:</label>
                         <INput type="time" id="hora" placeholder="10:00"></INput>
-        
+
                     </div>
 
                     <div class="inputEntrega">
 
                         <label for="cidade" style="font-size: 1.3em; color: #506C53;">Selecione a data</label>
                         <INput type="date" id="dataEntrega" placeholder="14 / 06 / 2023"></INput>
-        
+
                     </div>
 
 
 
                 </div>
 
-            <!-- Botão Doar-->
-            <div class="mainButton">
-                <button type="submit" class="btnDoar" onclick="location.href='feedback.html'">Doar</button>
-            </div>
+                <!-- Botão Doar-->
+                <div class="mainButton">
+                    <button type="submit" class="btnDoar" onclick="location.href='feedback.html'">Doar</button>
+                </div>
 
         </aside>
 
@@ -449,25 +358,101 @@
 
     <script>
 
-        let uploadImage1 = document.getElementById("uploadImage1");
-        let uploadImage2 = document.getElementById("uploadImage2");
-        let uploadImage3 = document.getElementById("uploadImage3");
-        let uploadImage4 = document.getElementById("uploadImage4");
-        let uploadImage5 = document.getElementById("uploadImage5");
-        let uploadImage6 = document.getElementById("uploadImage6");
-        let iconUpload = document.getElementsByClassName("upload-icon")
-
         let uploadDivs = document.querySelectorAll('.upload');
         for (const uploadDiv of uploadDivs) {
             uploadDiv.addEventListener('change', function (event) {
-                
+
                 let elem = event.currentTarget;
 
-                
+
                 elem.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
 
             });
         }
+
+
+        /* exbir valores */
+
+        // vetores que vao guardar os valores
+        
+        let itensAdicionados = document.getElementById('caixaAdicionados');
+
+        // função do botão para salvar os valores 
+
+        function saveDatas() {
+
+            let x = document.getElementById('inputQuantDoacao');
+            let y = document.getElementById('campanhasDoacao');
+
+            console.log(x.value);
+
+            console.log(y.options[y.selectedIndex].innerText);
+
+            // cria a caixa 
+            
+            let divItem = document.createElement('div');
+            divItem.className = 'caixaDoado'
+
+            itensAdicionados.append(divItem);
+
+            // cria a div da caixa que vai inserir o nome da categoria
+
+            let divTextDoado = document.createElement('div');
+            divTextDoado.className = 'divItensDoados';
+
+            divItem.append(divTextDoado);
+
+            // o p com css para o nome da categoria
+
+            pText = document.createElement('p');
+            pText.className = 'textItensDoados';
+
+            // insere o nome da categoria no p
+
+            divTextDoado.append(pText)
+            let categoria = y.options[y.selectedIndex].innerText;
+            pText.append(categoria)
+
+            // cria a div do traço 
+
+            let divTraco = document.createElement('div');
+            divTraco.className = 'divTraçoDoados';
+
+            divItem.append(divTraco);
+
+            // cria e insere a div de p para o traco e o traco no p
+
+            pTraco = document.createElement('p');
+            pTraco.className = 'textItensDoados';
+
+            divTraco.append(pTraco);
+
+            let traco = '-';
+            pTraco.append(traco);
+
+            // cria a div da quant e insere ela na div item
+
+            let divQuantDoados = document.createElement('div');
+            divQuantDoados.className = 'divQuantDoados';
+
+            divItem.append(divQuantDoados);
+
+            // cria e insere o p da div quant
+
+            pQuant = document.createElement('p');
+            pQuant.className = 'textItensDoados';
+
+            // insere a quant no p 
+
+            divQuantDoados.append(x.value);
+
+
+            // ao clicar na botao a pagina volta para o topo
+
+            window.scrollTo(300, 300);
+        };
+
+
     </script>
 
 </body>

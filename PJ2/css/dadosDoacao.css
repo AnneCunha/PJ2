@@ -303,7 +303,7 @@ corpo
   margin-bottom: -9px;
 }
 
-.campanhasDoacao {
+#campanhasDoacao {
     box-sizing: border-box;
 
     width: 439px;
@@ -384,7 +384,7 @@ corpo
 
   position: relative;
   display: flex;
-  background-size: cover;
+  background-size: 240px 170px;
   background-repeat: no-repeat;
   background-position: center center;
 }
