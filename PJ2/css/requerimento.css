@@ -162,8 +162,8 @@
     position: relative;
     height: 70px; 
     width: 70px;
-    border: solid 1px #62A34B;
     border-radius: 10px;
+    cursor: pointer;
   }
 
   .nomeSairPerfil {
@@ -181,6 +181,7 @@
 
   margin: 0%;
   padding: 0%;
+  cursor: pointer;
   }
 
   #buttonSair {
@@ -209,13 +210,14 @@
     line-height: 24px;
 
 
-
+    user-select: none;
     color: rgba(0, 0, 0, 0.51);
   }
 
   #imgPerfilUsuario {
     padding: 0%;
     margin: 0rem 0rem 0rem 1rem;
+    cursor: pointer;
   }
   
   
@@ -423,9 +425,10 @@
   }
   
   #itensAdicionados > h3 {
+    font-size: 1.3em;
     margin: 0px;
     padding-left: 10px;
-    
+    color: #506C53;
   }
   
   #textBoxDoados {

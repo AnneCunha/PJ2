@@ -33,15 +33,15 @@
             </nav>
 
             <div class="logoPerfil">
-                <img src="img/Logo/Logo.png" id="logo">
+                <img src="img/Logo/Logo.png" id="logo" onclick="location.href='Home.html'">
     
     
     
                 <div class="nomeSairPerfil">
-                    <h3 id="nomePerfil">Nome Do Usuario</h3>
+                    <h3 id="nomePerfil" onclick="location.href='perfilUsuario.html'">Nome Do Usuario</h3>
                     <p id="separadorTexto">|</p>
                     <button id="buttonSair" onclick="location.href='Home.html'">Sair</button>
-                    <img id="imgPerfilUsuario" src="img/Foto Perfil/Perfil.png" alt="Foto de Perfil do usuario">
+                    <img id="imgPerfilUsuario" src="img/Foto Perfil/Perfil.png" alt="Foto de Perfil do usuario" onclick="location.href='perfilUsuario.html'">
                 </div>
             </div>
         </div>
@@ -49,103 +49,105 @@
         <!-- Body -->
     <div class="corpo">
         <div class="wrapperCorpo">
-            <div class="allRegistro">
-                <div class="registro">
-                    <form action="CategoriaCampanhas">
-                        <h1 id="tituloCorpo">Dados de doação monetária</h1>
-                        <select class="campanhas">
-                            <option value="0" >Campanhas</option>
-                            <option value="1">Saúde</option>
-                            <option value="2">Funeral</option>
-                            <option value="3">Emergência</option>
-                            <option value="4">Organização sem fins lucrativos</option>
-                            <option value="5">Emergência Financeira</option>
-                            <option value="6">Animais</option>
-                        </select>
-                    </form>
+            <form action="" >
+                <div class="allRegistro">
+                    <div class="registro">
+                        <div action="CategoriaCampanhas">
+                            <h1 id="tituloCorpo">Dados de Doação Monetária</h1>
+                            <select class="campanhas">
+                                <option value="0" >Campanhas</option>
+                                <option value="1">Saúde</option>
+                                <option value="2">Funeral</option>
+                                <option value="3">Emergência</option>
+                                <option value="4">Organização sem fins lucrativos</option>
+                                <option value="5">Emergência Financeira</option>
+                                <option value="6">Animais</option>
+                            </select>
+                        </div>
 
-                    <form action="beneficente">
-                        <select class="beneficentes">
-                            <option value="0">Beneficente</option>
-                            <option value="1">Requerente</option>
-                        </select>
-                    </form>
+                        <div action="beneficente">
+                            <select class="beneficentes">
+                                <option value="0">Beneficente</option>
+                                <option value="1">Requerente</option>
+                            </select>
+                        </div>
 
-                    <input id="inputMonetario" type="text" onchange="formatarDinheiro()" placeholder="R$ 0,00">
+                        <input id="inputMonetario" type="text" onchange="formatarDinheiro()" placeholder="R$ 0,00">
 
 
-                    <!-- Icon de Serviço -->
-                    <div class="iconServico">
-                        <nav>
-                                <img id="iconServico01" src="img/Icon Doação Monetaria/Banco do Brasil.png" alt="Banco do Brasil">
-                                <img id="iconServico02" src="img/Icon Doação Monetaria/Visa.png" alt="Visa">
-                                <img id="iconServico03" src="img/Icon Doação Monetaria/Elo.png" alt="Elo">
-                                <img id="iconServico04" src="img/Icon Doação Monetaria/Maestro.png" alt="Maestro">
-                                <img id="iconServico05" src="img/Icon Doação Monetaria/MasterCard.png" alt="MasterCard">
-                        </nav>
+                        <!-- Icon de Serviço -->
+                        <div class="iconServico">
+                            <nav>
+                                    <img id="iconServico01" src="img/Icon Doação Monetaria/Banco do Brasil.png" alt="Banco do Brasil">
+                                    <img id="iconServico02" src="img/Icon Doação Monetaria/Visa.png" alt="Visa">
+                                    <img id="iconServico03" src="img/Icon Doação Monetaria/Elo.png" alt="Elo">
+                                    <img id="iconServico04" src="img/Icon Doação Monetaria/Maestro.png" alt="Maestro">
+                                    <img id="iconServico05" src="img/Icon Doação Monetaria/MasterCard.png" alt="MasterCard">
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="imgDoador">
+                        <img src="img/fotoUsuario/imagem usuario.png" alt="">
+                        <h2 id="txtH3Doador">(Name) Doador</h2>
                     </div>
                 </div>
 
-                <div class="imgDoador">
-                    <img src="img/fotoUsuario/imagem usuario.png" alt="">
-                    <h2 id="txtH3Doador">(Name) Doador</h2>
-                </div>
-            </div>
-
-            
-            <!-- Cartão -->
-            <div class="cartao">
-                <img src="img/Fundo do Cartão/Cartão.png" alt="Fundo do Cartão">
-                <form class="superiorTextoInput">
-                    <h2 id="txtTituloCartao">Número do Cartão</h2>
-                    <input type="text" id="numeroCartao" placeholder="0000 0000 0000 0000" onKeyPress="if(this.value.length==19) return false;" oninput="formatarNumero(this)">
-                </form>
-
-                <form action=""  id="txtTitulo">
-                    <h2 id="txtNumeroCartao">Nome no cartão</h2>
-
-                    <h2 id="txtValidoAte">Válido até</h2>
-
-                    <h2 id="txtCVV">CVV</h2>
-                </form>
-
-                <form action="Número do cartão / Valido até / CVV" class="superiorNumeroValidoCvv">
-                    
-                    <input type="text" name="Nome no Cartao" id="nomeCartao" placeholder="XXXXXX X. XXXXXXX" onKeyPress="if(this.value.length==30) return false;" oninput="formatarLetra(this)">
-
-                    
-                    <input type="text" name="Valido" id="dateValido" placeholder="00/00" onKeyPress="if(this.value.length==5) return false;" oninput="formatarData(this)">
-
-                    
-                    <input type="text" id="cvv" placeholder="000" onKeyPress="if(this.value.length==3) return false;" oninput="formatarNumeroUnico(this)">
-                </form>
-            </div>
-
-
-            <!-- Código Pix -->
-            <div class="descricaoPix">
-                <h2 id="txtDescricaoPix">Doe através do Pix!</h2>
-                <div class="allDescricao">
-
-                    <img src="img/Pix/Img Pix 04.png" alt="Imagem Pix" id="imgPix">
-
-                    <div class="allTextoDescricaoPix">
-                        <p>Nome: Ajuda Sem Fronteiras</p>
-                        <br>
-                        <p>Banco: 007 Inter</p>
-                        <br>
-                        <p>Chave Pix: 39.421.539/0001-50</p>
+                
+                <!-- Cartão -->
+                <div class="cartao">
+                    <img src="img/Fundo do Cartão/Cartão.png" alt="Fundo do Cartão">
+                    <div class="superiorTextoInput">
+                        <h2 id="txtTituloCartao">Número do Cartão</h2>
+                        <input type="text" id="numeroCartao" placeholder="0000 0000 0000 0000" onKeyPress="if(this.value.length==19) return false;" oninput="formatarNumero(this)">
                     </div>
 
-                    <img src="img/Pix/Rectangle cod QR 04.png" alt="Imagem QRCode" id="imgQRCode">
+                    <div action=""  id="txtTitulo">
+                        <h2 id="txtNumeroCartao">Nome no cartão</h2>
+
+                        <h2 id="txtValidoAte">Válido até</h2>
+
+                        <h2 id="txtCVV">CVV</h2>
+                    </div>
+
+                    <div action="Número do cartão / Valido até / CVV" class="superiorNumeroValidoCvv">
+                        
+                        <input type="text" name="Nome no Cartao" id="nomeCartao" placeholder="XXXXXX X. XXXXXXX" onKeyPress="if(this.value.length==30) return false;" oninput="formatarLetra(this)">
+
+                        
+                        <input type="text" name="Valido" id="dateValido" placeholder="00/00" onKeyPress="if(this.value.length==5) return false;" oninput="formatarData(this)">
+
+                        
+                        <input type="text" id="cvv" placeholder="000" onKeyPress="if(this.value.length==3) return false;" oninput="formatarNumeroUnico(this)">
+                    </div>
                 </div>
-            </div>
 
 
-            <!-- Botão Doar-->
-            <div class="mainButton">
-                    <button type="submit" class="btnDoar" onclick="location.href='feedback.html'">Doar</button>
-            </div>
+                <!-- Código Pix -->
+                <div class="descricaoPix">
+                    <h2 id="txtDescricaoPix">Doe através do Pix!</h2>
+                    <div class="allDescricao">
+
+                        <img src="img/Pix/Img Pix 04.png" alt="Imagem Pix" id="imgPix">
+
+                        <div class="allTextoDescricaoPix">
+                            <p>Nome: Ajuda Sem Fronteiras</p>
+                            <br>
+                            <p>Banco: 007 Inter</p>
+                            <br>
+                            <p>Chave Pix: 39.421.539/0001-50</p>
+                        </div>
+
+                        <img src="img/Pix/Rectangle cod QR 04.png" alt="Imagem QRCode" id="imgQRCode">
+                    </div>
+                </div>
+
+
+                <!-- Botão Doar-->
+                <div class="mainButton">
+                        <button type="submit" class="btnDoar" onclick="location.href='feedback.html'">Doar</button>
+                </div>
+            </form>
         </div>
     </div>      
     

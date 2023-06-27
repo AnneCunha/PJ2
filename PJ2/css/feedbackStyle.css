@@ -167,8 +167,9 @@ padding: 50px;
     position: relative;
     height: 70px; 
     width: 70px;
-    border: solid 1px #62A34B;
     border-radius: 10px;
+
+    cursor: pointer;
   }
 
   .nomeSairPerfil {
@@ -186,6 +187,7 @@ padding: 50px;
 
   margin: 0%;
   padding: 0%;
+  cursor: pointer;
   }
 
   #buttonSair {
@@ -213,12 +215,14 @@ padding: 50px;
     font-size: 20px;
     line-height: 24px;
 
+    user-select: none;
     color: rgba(0, 0, 0, 0.51);
   }
 
   #imgPerfilUsuario {
     padding: 0%;
     margin: 0rem 0rem 0rem 1rem;
+    cursor: pointer;
   }
 
 
@@ -356,13 +360,12 @@ color: #FFC978;
 /* caixa de feedback*/
 
 .feedback {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
 
 }
-
 
 .feedback p {
   padding-right: 480px;
@@ -370,7 +373,13 @@ margin: 30px;
   margin: 10px;
 }
 
-#FeedbackTexto  {
+.wrapperFeedback {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#feedbackTexto  {
   font-family: 'Anuphan', sans-serif;
   width: 600px;
   height: 170px;
@@ -384,28 +393,25 @@ margin: 30px;
 }
 
 #buttonEnviarFeedback {
-  background-color: white;
-  color: black;
-  border: 2px solid #465847;
-  
-  border-radius: 30px;
-  
-  text-align: center;
-  display: inline-block;
-  font-size: 15px;
-  transition-duration: 0.5s;
-  cursor: pointer;
+  position: static;
 
-  margin: 1rem 0rem 0rem 0rem;
-  padding: 0%;
+  margin: 10px 0px 0px 0px;
+
+  background: #506d53;
+  border: 1px solid #506C53;
+  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+  color: white;
+
+  cursor: pointer;
+  transition-duration: 0.5s;
 
   width: 70px;
   height: 30px;
 }
 
-#buttonEnviarFeedback:hover{
-
-  background-color: #273528;
+#buttonEnviarFeedback:hover {
+  background-color: #465847;
   color: white;
 }
 

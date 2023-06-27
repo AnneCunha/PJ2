@@ -8,6 +8,8 @@
     <title>Ajuda Sem Fronteiras</title>
 
     <link rel="icon" type="image/png" href="img/Logo/Logo.png" />
+    <link rel="icon" type="image/png"
+        href="img/Logo/Logo.png"/>
 
     <link rel="stylesheet" href="css/requerimento.css">
 </head>
@@ -33,15 +35,15 @@
         </nav>
 
         <div class="logoPerfil">
-            <img src="img/Logo/Logo.png" id="logo">
+            <img src="img/Logo/Logo.png" id="logo" onclick="location.href='Home.html'">
 
 
 
             <div class="nomeSairPerfil">
-                <h3 id="nomePerfil">Nome Do Usuario</h3>
+                <h3 id="nomePerfil" onclick="location.href='perfilUsuario.html'">Nome Do Usuario</h3>
                 <p id="separadorTexto">|</p>
                 <button id="buttonSair" onclick="location.href='Home.html'">Sair</button>
-                <img id="imgPerfilUsuario" src="img/Foto Perfil/Perfil.png" alt="Foto de Perfil do usuario">
+                <img id="imgPerfilUsuario" src="img/Foto Perfil/Perfil.png" alt="Foto de Perfil do usuario" onclick="location.href='perfilUsuario.html'">
             </div>
         </div>
     </div>
@@ -222,8 +224,8 @@
 
                     <div class="inputEntrega">
 
-                        <label for="endereco" style="font-size: 1.3em; color: #506C53;">Endereço de entrega</label>
-                        <INput type="text" id="enderecoIntrega"></INput>
+                    <label for="endereco" style="font-size: 1.3em; color: #506C53;">Endereço de entrega</label>
+                    <INput type="text" id="enderecoIntrega"></INput>
 
                     </div>
 

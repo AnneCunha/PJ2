@@ -24,22 +24,22 @@
 
 
         <nav class="header-botoes">
-                <button type="submit" class="btn" onclick="location.href='doacao.html'">Doar Produtos</button>
+                <button type="submit" class="btn" onclick="location.href='doacao.html'">Doar</button>
                 <button type="submit" class="btn" onclick="location.href='requerimento.html'">Requisitar</button>
                 <button type="submit" class="btn" onclick="location.href='doacaoMonetaria.html'">Doações Monetária</button>
         </nav>
 
             
         <div class="logoPerfil">
-            <img src="img/Logo/Logo.png" id="logo">
+            <img src="img/Logo/Logo.png" id="logo" onclick="location.href='Home.html'">
 
 
 
             <div class="nomeSairPerfil">
-                <h3 id="nomePerfil">Nome Do Usuario</h3>
+                <h3 id="nomePerfil" onclick="location.href='perfilUsuario.html'">Nome Do Usuario</h3>
                 <p id="separadorTexto">|</p>
                 <button id="buttonSair" onclick="location.href='Home.html'">Sair</button>
-                <img id="imgPerfilUsuario" src="img/Foto Perfil/Perfil.png" alt="Foto de Perfil do usuario">
+                <img id="imgPerfilUsuario" src="img/Foto Perfil/Perfil.png" alt="Foto de Perfil do usuario" onclick="location.href='perfilUsuario.html'">
             </div>
         </div>
     </div>
@@ -83,8 +83,12 @@
         </div>
 
         <div class="feedback">
-            <p>Feedback:</p>
-            <textarea id="FeedbackTexto" name="FeedbackTexto"></textarea>
+            <form class="wrapperFeedback">
+                <p>Feedback:</p>
+                <textarea id="feedbackTexto" name="FeedbackTexto"></textarea>
+
+                <button id="buttonEnviarFeedback">Enviar</button>
+            </form>
         </div>
 
         <div class="buttonHome">
@@ -94,6 +98,8 @@
 
 
     <!-- Footer -->
+
+
     <footer id="footer">
     <div class="wrapper">
         <div class="allFooter">
